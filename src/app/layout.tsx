@@ -1,19 +1,27 @@
 import type { Metadata } from 'next';
-import { Poppins } from 'next/font/google';
+import { Cormorant_Garamond, Be_Vietnam_Pro } from 'next/font/google';
 import './globals.css';
 import { LangProvider, LocalizationProvider } from '@/locales';
 import { Toaster } from 'sonner';
 
-const poppins = Poppins({
-  variable: '--font-poppins',
-  subsets: ['latin'],
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+const cormorant = Cormorant_Garamond({
+  subsets: ['vietnamese'],
+  weight: ['400', '600', '700'],
+  variable: '--font-serif-wedding',
+  display: 'swap',
+});
+
+const vietnamPro = Be_Vietnam_Pro({
+  subsets: ['vietnamese'],
+  weight: ['400', '500', '600'],
+  variable: '--font-sans-wedding',
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
-  title: 'The Wedding of Fiqri & Beloved',
+  title: 'Lễ Vu Quy Của Thanh & Zhe Ji',
   description:
-    'Join us in celebrating the union of Fiqri and his beloved. Discover our love story, wedding details, and more.',
+    'Cùng chung vui và chúc phúc cho ngày trọng đại của Thanh và Zhe Ji. Khám phá câu chuyện tình yêu, thông tin tiệc cưới và nhiều hơn thế nữa.',
 };
 
 export default function RootLayout({
@@ -22,8 +30,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${poppins.variable} antialiased`}>
+    <html
+      lang="vi"
+      className={`${cormorant.variable} ${vietnamPro.variable}`}
+      suppressHydrationWarning
+    >
+      <body className="font-sans antialiased">
         <LangProvider>
           <LocalizationProvider>
             {children}

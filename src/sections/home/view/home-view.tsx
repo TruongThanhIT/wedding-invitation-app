@@ -100,7 +100,6 @@ export default function HomeView() {
       {/* Venue Information */}
       <section id="venue" className="relative">
         <VenueInformation venue={WEDDING_CONFIG.venue} />
-        <EventSchedule />
       </section>
 
       {/* Gallery Preview */}

@@ -70,7 +70,7 @@ export const CoupleIntroduction = ({
               </div>
             </div>
 
-            <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif text-gray-800 mb-2">
+            <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif text-gray-800 mb-2">
               {bride.fullName}
             </h3>
             <p className="text-base sm:text-lg md:text-xl text-rose-600 mb-4 font-medium">
@@ -138,7 +138,7 @@ export const CoupleIntroduction = ({
               </div>
             </div>
 
-            <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif text-gray-800 mb-2">
+            <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif text-gray-800 mb-2">
               {groom.fullName}
             </h3>
             <p className="text-base sm:text-lg md:text-xl text-blue-600 mb-4 font-medium">

@@ -1,9 +1,10 @@
 // Wedding-related utility functions
-export const formatWeddingTime = (date: Date, code: string): string => {
-  return date.toLocaleTimeString(code, {
-    hour: 'numeric',
-    minute: '2-digit',
-    hour12: true,
+export const formatWeddingTime = (date: Date, locale: string = "vi-VN") => {
+  return date.toLocaleTimeString(locale, {
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false,
+    timeZone: "Asia/Ho_Chi_Minh", 
   });
 };
 
@@ -48,7 +49,27 @@ export const generateGoogleCalendarLink = (event: {
 const formatDateForGoogle = (date: Date): string => {
   return date.toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z';
 };
+export const generateMapLink = (
+  venueItem: {
+    address?: string;
+    name?: string;
+    placeId?: string;
+    mapUrl?: string;
+  } | string
+): string => {
+  if (typeof venueItem === 'string') {
+    return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(venueItem)}`;
+  }
 
-export const generateMapLink = (address: string): string => {
-  return `https://maps.google.com/maps?q=${encodeURIComponent(address)}`;
+  if (venueItem?.mapUrl) {
+    return venueItem.mapUrl;
+  }
+
+  if (venueItem?.placeId) {
+    const query = encodeURIComponent(venueItem.name || venueItem.address || '');
+    return `https://www.google.com/maps/search/?api=1&query=${query}&query_place_id=${venueItem.placeId}`;
+  }
+
+  const searchQuery = venueItem?.address || venueItem?.name || '';
+  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(searchQuery)}`;
 };

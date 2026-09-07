@@ -78,13 +78,12 @@ export const VenueInformation = ({ venue }: VenueInformationProps) => {
                   <p>• {t('venue.arrive-early')}</p>
                   <p>• {t('venue.unplugged')}</p>
                   <p>• {t('venue.parking')}</p>
-                  <p>• {t('venue.wheelchair')}</p>
                 </div>
               </div>
 
               <button
                 onClick={() =>
-                  window.open(generateMapLink(venue.ceremony.name), '_blank')
+                  window.open(generateMapLink(venue.ceremony), '_blank')
                 }
                 className="w-full bg-gradient-to-r from-purple-400 to-indigo-500 text-white py-3 px-6 rounded-xl font-medium hover:from-purple-500 hover:to-indigo-600 transition-all duration-300 shadow-lg hover:shadow-xl text-sm sm:text-base cursor-pointer"
               >
@@ -133,13 +132,12 @@ export const VenueInformation = ({ venue }: VenueInformationProps) => {
                   <p>• {t('venue.welcome-drink')}</p>
                   <p>• {t('venue.open-bar')}</p>
                   <p>• {t('venue.dancing')}</p>
-                  <p>• {t('venue.valet')}</p>
                 </div>
               </div>
 
               <button
                 onClick={() =>
-                  window.open(generateMapLink(venue.reception.name), '_blank')
+                  window.open(generateMapLink(venue.reception), '_blank')
                 }
                 className="w-full bg-gradient-to-r from-amber-400 to-orange-500 text-white py-3 px-6 rounded-xl font-medium hover:from-amber-500 hover:to-orange-600 transition-all duration-300 shadow-lg hover:shadow-xl text-sm sm:text-base cursor-pointer"
               >
@@ -147,37 +145,7 @@ export const VenueInformation = ({ venue }: VenueInformationProps) => {
               </button>
             </div>
           </motion.div>
-        </div>
-
-        {/* Transportation Info */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 30 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="mt-16 text-center"
-        >
-          <div className="bg-gradient-to-r from-rose-50 to-pink-50 rounded-2xl p-8 max-w-3xl mx-auto border border-rose-100">
-            <h4 className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-800 mb-4 flex items-center justify-center">
-              <span className="mr-2">🚐</span>
-              {t('venue.transportation')}
-            </h4>
-            <p className="text-gray-600 mb-4 text-sm sm:text-base">
-              {t('venue.shuttle-service')}
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm text-gray-600">
-              <div className="bg-white/50 rounded-lg p-4">
-                <p className="font-medium">{t('venue.shuttle-schedule')}</p>
-                <p>{t('venue.departure')}</p>
-                <p>{t('venue.return-trips')}</p>
-              </div>
-              <div className="bg-white/50 rounded-lg p-4">
-                <p className="font-medium">{t('venue.alternative')}</p>
-                <p>{t('venue.taxi-uber')}</p>
-                <p>{t('venue.public-parking')}</p>
-              </div>
-            </div>
-          </div>
-        </motion.div>
+        </div>        
       </div>
     </div>
   );

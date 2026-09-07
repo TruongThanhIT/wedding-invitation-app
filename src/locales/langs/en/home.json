@@ -15,7 +15,7 @@
     "quote": "Your presence in our lives has been a blessing, and having you celebrate this special day with us would make our joy complete. Thank you for being part of our love story.",
     "with-love": "With all our love,",
     "hashtags": "#FiqriAndMio2025 #LoveWins #ForeverStartsNow",
-    "contact": "Questions? Contact us at wedding@fihaa.my.id"
+    "contact": "Questions? Contact us at truongthanh.it95@gmail.com"
   },
   "hero": {
     "welcome": "Welcome to Our Wedding",
@@ -84,20 +84,10 @@
     "arrive-early": "Please arrive 15 minutes early",
     "unplugged": "Unplugged ceremony - enjoy the moment",
     "parking": "Parking available on-site",
-    "wheelchair": "Wheelchair accessible",
     "welcome-drink": "Welcome drink & dinner included",
     "open-bar": "Open bar until midnight",
     "dancing": "Dancing & live music",
-    "valet": "Valet parking available",
-    "view-map": "View on Map",
-    "transportation": "Transportation",
-    "shuttle-service": "Complimentary shuttle service will be provided between the ceremony and reception venues.",
-    "shuttle-schedule": "Shuttle Schedule",
-    "departure": "Departure: 5:30 PM",
-    "return-trips": "Return trips: Every 30 minutes",
-    "alternative": "Alternative Options",
-    "taxi-uber": "Taxi & Uber readily available",
-    "public-parking": "Public parking nearby"
+    "view-map": "View on Map"
   },
   "gallery": {
     "title": "Our Memories",
@@ -131,9 +121,10 @@
     "please-select": "Please select",
     "yes-there": "Yes, I'll be there! 🎉",
     "no-cant": "Sorry, can't make it 😢",
-    "number-guests": "Number of Guests",
     "guest-count": "Guest",
-    "guests-count": "Guests",
+    "number-guests": "Number of guests (including you)",
+    "guest-1": "1 person (Just me)",
+    "guests-count": "{{count}} people",
     "dietary-restrictions": "Dietary Restrictions",
     "dietary-placeholder": "Any allergies or dietary needs?",
     "message-couple": "Message for the Couple",

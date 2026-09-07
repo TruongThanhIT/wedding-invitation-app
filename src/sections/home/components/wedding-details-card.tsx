@@ -1,18 +1,18 @@
-'use client';
+"use client";
 
-import { motion } from 'motion/react';
+import { motion } from "motion/react";
 import {
   formatWeddingTime,
   generateGoogleCalendarLink,
   generateMapLink,
-} from '@/lib/wedding-utils';
-import type { WeddingConfigType } from '@/types';
-import { useTranslation } from 'react-i18next';
-import { useTranslate } from '@/locales';
+} from "@/lib/wedding-utils";
+import type { WeddingConfigType } from "@/types";
+import { useTranslation } from "react-i18next";
+import { useTranslate } from "@/locales";
 
 interface WeddingDetailsCardProps {
   date: Date;
-  venue: WeddingConfigType['venue'];
+  venue: WeddingConfigType["venue"];
 }
 
 export const WeddingDetailsCard = ({
@@ -20,13 +20,13 @@ export const WeddingDetailsCard = ({
   venue,
 }: WeddingDetailsCardProps) => {
   const { currentLang } = useTranslate();
-  const { t } = useTranslation('home');
+  const { t } = useTranslation("home");
 
   const calendarEvent = {
-    title: t('details.our-wedding-day'),
+    title: t("details.our-wedding-day"),
     start: date,
     end: new Date(date.getTime() + 5 * 60 * 60 * 1000), // 5 hours later
-    description: t('details.join-us'),
+    description: t("details.join-us"),
     location: venue.ceremony.address,
   };
 
@@ -42,11 +42,11 @@ export const WeddingDetailsCard = ({
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif text-gray-800 mb-4">
-            {t('details.title')}
+            {t("details.title")}
           </h2>
           <div className="w-24 h-px bg-rose-400 mx-auto mb-6"></div>
           <p className="text-lg sm:text-xl md:text-2xl text-gray-600 max-w-2xl mx-auto">
-            {t('details.join-us-text')}
+            {t("details.join-us-text")}
           </p>
         </motion.div>
 
@@ -74,7 +74,7 @@ export const WeddingDetailsCard = ({
               >
                 <span className="text-2xl">💕</span>
                 <span className="text-sm sm:text-base font-semibold text-rose-600 tracking-wide uppercase">
-                  {t('details.date')}
+                  {t("details.date")}
                 </span>
               </motion.div>
             </div>
@@ -95,7 +95,7 @@ export const WeddingDetailsCard = ({
                   </div>
                 </div>
                 <p className="text-xs sm:text-sm font-medium text-gray-500 uppercase tracking-wider mt-3">
-                  {t('details.day')}
+                  {t("details.day")}
                 </p>
               </motion.div>
 
@@ -111,7 +111,7 @@ export const WeddingDetailsCard = ({
                   <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-none mb-1">
                     {date
                       .toLocaleDateString(currentLang.numberFormat.code, {
-                        month: 'short',
+                        month: "short",
                       })
                       .toUpperCase()}
                   </div>
@@ -120,7 +120,7 @@ export const WeddingDetailsCard = ({
                   </div>
                 </div>
                 <p className="text-xs sm:text-sm font-medium text-gray-500 uppercase tracking-wider mt-3">
-                  {t('details.month')} & {t('details.year')}
+                  {t("details.month")} & {t("details.year")}
                 </p>
               </motion.div>
 
@@ -138,7 +138,7 @@ export const WeddingDetailsCard = ({
                   </div>
                 </div>
                 <p className="text-xs sm:text-sm font-medium text-gray-500 uppercase tracking-wider mt-3">
-                  {t('details.time')}
+                  {t("details.time")}
                 </p>
               </motion.div>
             </div>
@@ -161,7 +161,7 @@ export const WeddingDetailsCard = ({
                     <span className="text-xl sm:text-2xl md:text-3xl">🗓️</span>
                     <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-serif text-gray-800 font-bold text-center leading-tight">
                       {date.toLocaleDateString(currentLang.numberFormat.code, {
-                        weekday: 'long',
+                        weekday: "long",
                       })}
                     </p>
                     <span className="text-xl sm:text-2xl md:text-3xl">🗓️</span>
@@ -169,13 +169,13 @@ export const WeddingDetailsCard = ({
                   <div className="w-16 sm:w-20 md:w-24 h-px bg-gradient-to-r from-transparent via-rose-400 to-transparent mx-auto mb-3"></div>
                   <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 font-medium">
                     {date.toLocaleDateString(currentLang.numberFormat.code, {
-                      month: 'long',
-                      day: 'numeric',
-                      year: 'numeric',
+                      month: "long",
+                      day: "numeric",
+                      year: "numeric",
                     })}
                   </p>
                   <p className="text-xs sm:text-sm md:text-base text-rose-600 font-semibold mt-2">
-                    {t('details.mark-calendar')}
+                    {t("details.mark-calendar")}
                   </p>
                 </div>
               </div>
@@ -200,7 +200,7 @@ export const WeddingDetailsCard = ({
                 <span className="text-xl group-hover/btn:scale-110 transition-transform duration-200">
                   📅
                 </span>
-                <span>{t('details.add-to-calendar')}</span>
+                <span>{t("details.add-to-calendar")}</span>
                 <motion.span
                   className="text-sm opacity-75"
                   animate={{ x: [0, 4, 0] }}
@@ -211,7 +211,7 @@ export const WeddingDetailsCard = ({
               </motion.a>
 
               <p className="text-xs sm:text-sm text-gray-500 mt-4 max-w-md mx-auto">
-                {t('details.message')}
+                {t("details.message")}
               </p>
             </motion.div>
           </div>
@@ -232,7 +232,7 @@ export const WeddingDetailsCard = ({
                 <div className="text-4xl">⛪</div>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">
-                {t('details.ceremony')}
+                {t("details.ceremony")}
               </h3>
               <div className="w-16 h-px bg-purple-400 mx-auto"></div>
             </div>
@@ -249,7 +249,7 @@ export const WeddingDetailsCard = ({
 
               <div className="bg-gray-50 rounded-xl p-4">
                 <p className="font-medium text-gray-800 text-sm sm:text-base">
-                  {t('details.time')}
+                  {t("details.time")}
                 </p>
                 <p className="text-purple-600 font-semibold text-sm sm:text-base">
                   {venue.ceremony.time}
@@ -257,14 +257,14 @@ export const WeddingDetailsCard = ({
               </div>
 
               <motion.a
-                href={generateMapLink(venue.ceremony.name)}
+                href={generateMapLink(venue.ceremony)}
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-500 to-indigo-500 text-white px-4 py-2 rounded-full text-sm font-medium hover:shadow-lg transition-all duration-300"
               >
-                📍 {t('details.get-directions')}
+                📍 {t("details.get-directions")}
               </motion.a>
             </div>
           </motion.div>
@@ -282,7 +282,7 @@ export const WeddingDetailsCard = ({
                 <div className="text-4xl">🎉</div>
               </div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">
-                {t('details.reception')}
+                {t("details.reception")}
               </h3>
               <div className="w-16 h-px bg-emerald-400 mx-auto"></div>
             </div>
@@ -299,7 +299,7 @@ export const WeddingDetailsCard = ({
 
               <div className="bg-gray-50 rounded-xl p-4">
                 <p className="font-medium text-gray-800 text-sm sm:text-base">
-                  {t('details.time')}
+                  {t("details.time")}
                 </p>
                 <p className="text-emerald-600 font-semibold text-sm sm:text-base">
                   {venue.reception.time}
@@ -307,14 +307,14 @@ export const WeddingDetailsCard = ({
               </div>
 
               <motion.a
-                href={generateMapLink(venue.reception.name)}
+                href={generateMapLink(venue.reception)}
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-500 to-teal-500 text-white px-4 py-2 rounded-full text-sm font-medium hover:shadow-lg transition-all duration-300"
               >
-                📍 {t('details.get-directions')}
+                📍 {t("details.get-directions")}
               </motion.a>
             </div>
           </motion.div>
@@ -330,23 +330,23 @@ export const WeddingDetailsCard = ({
         >
           <div className="bg-gradient-to-r from-rose-50 to-pink-50 rounded-2xl p-8 border border-rose-100">
             <h4 className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-800 mb-4">
-              {t('details.please-note')}
+              {t("details.please-note")}
             </h4>
             <div className="grid md:grid-cols-3 gap-6 text-xs sm:text-sm text-gray-600">
               <div className="flex flex-col items-center">
                 <div className="text-xl sm:text-2xl mb-2">👗</div>
-                <p className="font-medium">{t('details.dress-code')}</p>
-                <p>{t('details.formal-attire')}</p>
+                <p className="font-medium">{t("details.dress-code")}</p>
+                <p>{t("details.formal-attire")}</p>
               </div>
               <div className="flex flex-col items-center">
                 <div className="text-xl sm:text-2xl mb-2">🚗</div>
-                <p className="font-medium">{t('details.parking')}</p>
-                <p>{t('details.valet-available')}</p>
+                <p className="font-medium">{t("details.parking")}</p>
+                <p>{t("details.valet-available")}</p>
               </div>
               <div className="flex flex-col items-center">
                 <div className="text-xl sm:text-2xl mb-2">📱</div>
-                <p className="font-medium">{t('details.contact')}</p>
-                <p>+62 812 3456 7890</p>
+                <p className="font-medium">{t("details.contact")}</p>
+                <p>+84 782 808 428</p>
               </div>
             </div>
           </div>
