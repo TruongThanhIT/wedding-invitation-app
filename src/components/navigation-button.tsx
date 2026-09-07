@@ -1,7 +1,7 @@
-import { NAVIGATION_ANIMATIONS } from '@/constants/navigation';
-import type { NavigationSection } from '@/types/navigation';
-import { motion, AnimatePresence } from 'motion/react';
-import { useTranslation } from 'react-i18next';
+import { NAVIGATION_ANIMATIONS } from "@/constants/navigation";
+import type { NavigationSection } from "@/types/navigation";
+import { motion, AnimatePresence } from "motion/react";
+import { useTranslation } from "react-i18next";
 
 // NavigationButton Component for better code organization
 interface NavigationButtonProps {
@@ -17,15 +17,15 @@ export function NavigationButton({
   isActive,
   onClick,
 }: NavigationButtonProps) {
-  const { t } = useTranslation('home');
+  const { t } = useTranslation("home");
 
   const baseClasses =
-    'relative flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-4 py-2 sm:py-2.5 rounded-lg sm:rounded-xl text-xs sm:text-sm font-medium transition-all duration-300 group overflow-hidden cursor-pointer';
+    "relative flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-4 py-2 sm:py-2.5 rounded-lg sm:rounded-xl text-xs sm:text-sm font-medium transition-all duration-300 group overflow-hidden cursor-pointer";
 
-  const activeClasses = 'text-white shadow-lg';
+  const activeClasses = "text-white shadow-lg";
 
   const inactiveClasses =
-    'text-gray-600 hover:text-rose-500 hover:bg-rose-50/80';
+    "text-gray-600 hover:text-rose-500 hover:bg-rose-50/80";
 
   return (
     <motion.button
@@ -80,10 +80,7 @@ export function NavigationButton({
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.3, delay: 0.1 * index }}
       >
-        {
-          // @ts-expect-error - err
-          t(section.labelKey)
-        }
+        {t(section.labelKey)}
       </motion.span>
 
       {/* Active Indicator Dot with Pulse */}
@@ -110,7 +107,7 @@ export function NavigationButton({
         className="absolute inset-0 rounded-lg sm:rounded-xl opacity-0 group-hover:opacity-10 transition-opacity duration-300"
         style={{
           background: `radial-gradient(circle at center, ${getRippleColor(
-            section.gradient
+            section.gradient,
           )} 0%, transparent 70%)`,
         }}
       />
@@ -120,5 +117,5 @@ export function NavigationButton({
 
 // Helper function to get ripple color
 const getRippleColor = (gradient: string): string => {
-  return gradient.includes('rose') ? '#f43f5e' : '#8b5cf6';
+  return gradient.includes("rose") ? "#f43f5e" : "#8b5cf6";
 };
