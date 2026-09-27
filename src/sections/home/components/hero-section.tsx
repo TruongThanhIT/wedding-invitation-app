@@ -1,8 +1,9 @@
-'use client';
+"use client";
 
-import type { WeddingConfigType } from '@/types';
-import { motion } from 'motion/react';
-import { useTranslation } from 'react-i18next';
+import type { WeddingConfigType } from "@/types";
+import { motion } from "motion/react";
+import { useTranslation } from "react-i18next";
+import Image from "next/image";
 
 interface HeroSectionProps {
   isLoaded: boolean;
@@ -15,7 +16,7 @@ export const HeroSection = ({
   couple,
   onScrollToSection,
 }: HeroSectionProps) => {
-  const { t } = useTranslation('home');
+  const { t } = useTranslation("home");
 
   return (
     <div className="h-screen bg-gradient-to-br from-rose-100 via-pink-50 to-purple-100 relative overflow-hidden">
@@ -38,7 +39,7 @@ export const HeroSection = ({
               className="mb-6 sm:mb-8"
             >
               <div className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 mb-4 font-medium">
-                {t('hero.welcome')}
+                {t("hero.welcome")}
               </div>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-serif text-gray-800 mb-6 leading-tight">
                 Our
@@ -59,8 +60,15 @@ export const HeroSection = ({
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 md:gap-8 lg:gap-10 mb-4 sm:mb-6">
                 {/* Bride */}
                 <div className="text-center flex-shrink-0 justify-items-center">
-                  <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 bg-gradient-to-br from-rose-200 to-pink-300 rounded-full flex items-center justify-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-3 sm:mb-4 shadow-lg">
-                    👰🏻
+                  <div className="relative w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 rounded-full overflow-hidden mb-3 sm:mb-4 shadow-lg border-4 border-white ring-2 ring-rose-200 bg-rose-100">
+                    <Image
+                      src={couple.bride.photo}
+                      alt={couple.bride.name}
+                      fill
+                      sizes="(max-width: 640px) 80px, (max-width: 768px) 96px, 128px"
+                      className="object-cover object-top"
+                      priority
+                    />
                   </div>
                   <div className="w-28 sm:w-32 md:w-40 lg:w-48 xl:w-56 mx-auto px-2">
                     <h3
@@ -73,19 +81,38 @@ export const HeroSection = ({
                 </div>
 
                 {/* Heart - Hidden on mobile, shown on larger screens */}
-                <div className="hidden sm:block text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-rose-500 animate-pulse flex-shrink-0">
-                  💕
+                <div className="hidden sm:flex text-rose-500 animate-pulse flex-shrink-0 items-center justify-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    className="w-7 h-7 md:w-9 md:h-9 lg:w-11 lg:h-11 text-rose-500 fill-rose-400/20 stroke-rose-500 stroke-[1.5]"
+                  >
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                  </svg>
                 </div>
 
                 {/* Heart for mobile - shown between bride and groom on mobile */}
-                <div className="sm:hidden text-xl text-rose-500 animate-pulse my-2">
-                  💕
+                <div className="sm:hidden flex justify-center text-rose-500 animate-pulse my-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    className="w-6 h-6 text-rose-500 fill-rose-400/20 stroke-rose-500 stroke-[1.5]"
+                  >
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                  </svg>
                 </div>
 
                 {/* Groom */}
                 <div className="text-center flex-shrink-0 justify-items-center">
-                  <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 bg-gradient-to-br from-blue-200 to-indigo-300 rounded-full flex items-center justify-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-3 sm:mb-4 shadow-lg">
-                    🤵🏻
+                  <div className="relative w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 rounded-full overflow-hidden mb-3 sm:mb-4 shadow-lg border-4 border-white ring-2 ring-blue-200 bg-blue-100">
+                    <Image
+                      src={couple.groom.photo}
+                      alt={couple.groom.name}
+                      fill
+                      sizes="(max-width: 640px) 80px, (max-width: 768px) 96px, 128px"
+                      className="object-cover object-top"
+                      priority
+                    />
                   </div>
                   <div className="w-28 sm:w-32 md:w-40 lg:w-48 xl:w-56 mx-auto px-2">
                     <h3
@@ -107,20 +134,20 @@ export const HeroSection = ({
               className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center"
             >
               <motion.button
-                onClick={() => onScrollToSection('rsvp')}
+                onClick={() => onScrollToSection("rsvp")}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="bg-gradient-to-r from-rose-500 to-pink-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-sm sm:text-base md:text-lg shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
               >
-                {t('navigation.rsvp')}
+                {t("navigation.rsvp")}
               </motion.button>
               <motion.button
-                onClick={() => onScrollToSection('details')}
+                onClick={() => onScrollToSection("details")}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="bg-white/80 backdrop-blur-sm text-gray-800 px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-sm sm:text-base md:text-lg shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 cursor-pointer"
               >
-                {t('hero.view-details')}
+                {t("hero.view-details")}
               </motion.button>
             </motion.div>
           </div>
@@ -138,18 +165,16 @@ export const HeroSection = ({
               animate={{ y: [0, 10, 0] }}
               transition={{ duration: 2, repeat: Infinity }}
               className="text-gray-600 text-center cursor-pointer"
-              onClick={() => onScrollToSection('couple')}
+              onClick={() => onScrollToSection("couple")}
             >
               <div className="text-xs mb-1 sm:mb-2">
-                {t('hero.scroll-down')}
+                {t("hero.scroll-down")}
               </div>
               <div className="text-lg sm:text-xl">⬇️</div>
             </motion.div>
           </motion.div>
         </div>
       </div>
-
-      {/* Remove the old absolute positioned scroll indicator */}
     </div>
   );
 };

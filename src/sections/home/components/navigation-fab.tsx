@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { motion } from 'motion/react';
+import { motion } from "motion/react";
 
 interface NavigationFABProps {
   activeSection: string;
@@ -8,13 +8,14 @@ interface NavigationFABProps {
 }
 
 const sections = [
-  'hero',
-  'couple',
-  'details',
-  'venue',
-  'gallery',
-  'rsvp',
-  'closing',
+  "hero",
+  "couple",
+  "details",
+  "venue",
+  "rsvp",
+  "love-story",
+  "gallery",
+  "closing",
 ];
 
 export default function NavigationFAB({
@@ -32,7 +33,7 @@ export default function NavigationFAB({
     <motion.div
       initial={{ opacity: 0, scale: 0, y: 100 }}
       animate={{ opacity: 1, scale: 1, y: 0 }}
-      transition={{ duration: 0.6, delay: 0.8, type: 'spring', stiffness: 200 }}
+      transition={{ duration: 0.6, delay: 0.8, type: "spring", stiffness: 200 }}
       className="fixed bottom-6 right-6 z-50"
     >
       {/* Progress Ring */}
@@ -64,9 +65,9 @@ export default function NavigationFAB({
               pathLength:
                 (sections.indexOf(activeSection) + 1) / sections.length,
             }}
-            transition={{ duration: 0.8, ease: 'easeInOut' }}
+            transition={{ duration: 0.8, ease: "easeInOut" }}
             style={{
-              strokeDasharray: '175.93',
+              strokeDasharray: "175.93",
               strokeDashoffset: 0,
             }}
           />
@@ -94,13 +95,13 @@ export default function NavigationFAB({
             className="absolute inset-0 bg-gradient-to-r from-rose-400/20 via-pink-400/20 to-purple-400/20 rounded-full"
             animate={{
               background: [
-                'linear-gradient(45deg, rgba(244, 63, 94, 0.1), rgba(236, 72, 153, 0.1), rgba(139, 92, 246, 0.1))',
-                'linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(244, 63, 94, 0.1), rgba(236, 72, 153, 0.1))',
-                'linear-gradient(225deg, rgba(236, 72, 153, 0.1), rgba(139, 92, 246, 0.1), rgba(244, 63, 94, 0.1))',
-                'linear-gradient(315deg, rgba(244, 63, 94, 0.1), rgba(236, 72, 153, 0.1), rgba(139, 92, 246, 0.1))',
+                "linear-gradient(45deg, rgba(244, 63, 94, 0.1), rgba(236, 72, 153, 0.1), rgba(139, 92, 246, 0.1))",
+                "linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(244, 63, 94, 0.1), rgba(236, 72, 153, 0.1))",
+                "linear-gradient(225deg, rgba(236, 72, 153, 0.1), rgba(139, 92, 246, 0.1), rgba(244, 63, 94, 0.1))",
+                "linear-gradient(315deg, rgba(244, 63, 94, 0.1), rgba(236, 72, 153, 0.1), rgba(139, 92, 246, 0.1))",
               ],
             }}
-            transition={{ duration: 4, repeat: Infinity, ease: 'linear' }}
+            transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
           />
 
           {/* Icon container */}
@@ -111,8 +112,8 @@ export default function NavigationFAB({
                 scale: [1, 1.1, 1],
               }}
               transition={{
-                rotate: { duration: 8, repeat: Infinity, ease: 'linear' },
-                scale: { duration: 2, repeat: Infinity, ease: 'easeInOut' },
+                rotate: { duration: 8, repeat: Infinity, ease: "linear" },
+                scale: { duration: 2, repeat: Infinity, ease: "easeInOut" },
               }}
               className="text-2xl filter drop-shadow-sm"
             >
@@ -136,7 +137,7 @@ export default function NavigationFAB({
           className="absolute right-full top-1/2 -translate-y-1/2 mr-4 bg-gray-800/90 text-white text-xs px-3 py-2 rounded-lg shadow-lg backdrop-blur-sm whitespace-nowrap pointer-events-none"
         >
           <div className="font-medium capitalize">
-            {activeSection === 'hero' ? 'Home' : activeSection}
+            {activeSection === "hero" ? "Home" : activeSection}
           </div>
           <div className="text-gray-300 text-xs">
             {sections.indexOf(activeSection) + 1} of {sections.length}

@@ -75,32 +75,19 @@
     "schedule-title": "Lịch Trình Sự Kiện",
     "preparation": "Chuẩn bị",
     "ceremony-time": "LỄ VU QUY",
-    "reception-time": "TIỆC MỪNG",
+    "reception-time": "TIỆC CƯỚI",
     "party": "Tiệc Sau Cưới (After Party)",
     "location-title": "Địa Điểm & Vị Trí",
     "location-subtitle": "Cùng đến chung vui tại những địa điểm tuyệt đẹp này trong ngày trọng đại của chúng tôi",
     "ceremony-details": "Lưu Ý Nhỏ Cho Khách Mời",
     "reception-details": "Thông Tin Tiệc Cưới",
     "arrive-early": "Nghi lễ Gia tiên được cử hành ấm cúng cùng gia đình & bà con thân thiết",
-    "unplugged": "Kính mời Quý khách chung vui tại Tiệc Mừng Nhà Hàng",
+    "unplugged": "Kính mời Quý khách chung vui tại Tiệc Cưới Nhà Hàng",
     "parking": "Khách mời tham dự lễ tại Tư gia sẽ có thông báo riêng từ Dâu Rể nha.",
-    "welcome-drink": "10:30 AM • Đón khách & Chụp ảnh kỷ niệm cùng Dâu Rể",
-    "open-bar": "11:30 AM • Bắt đầu Cử hành Lễ trên Sân khấu",
-    "dancing": "11:45 AM • Khai tiệc mừng & Dùng bữa thân mật",
+    "welcome-drink": "11:00 AM • Đón khách",
+    "open-bar": "11:30 AM • Khai tiệc",
+    "dancing": "Bãi đỗ xe: Có sẵn chỗ đỗ xe máy & ô tô trong khuôn viên.",
     "view-map": "Xem Trên Bản Đồ"
-  },
-  "gallery": {
-    "title": "Kỷ Niệm Của Chúng Tôi",
-    "subtitle": "Một chút khoảnh khắc trên hành trình cùng nhau",
-    "journey-title": "Hành Trình Bên Nhau",
-    "journey-subtitle": "Cùng nhìn lại câu chuyện tình yêu qua những khoảnh khắc đáng nhớ",
-    "view-full": "Xem Toàn Bộ Thư Viện Ảnh",
-    "engagement": "Ảnh đính hôn",
-    "travel": "Những chuyến đi cùng nhau",
-    "date": "Kỷ niệm buổi hẹn hò đầu tiên",
-    "proposal": "Khoảnh khắc cầu hôn",
-    "family": "Bên gia đình",
-    "friends": "Vui vầy cùng bạn bè"
   },
   "rsvp": {
     "title": "Xác Nhận Tham Dự (RSVP)",
@@ -146,7 +133,8 @@
     "details": "Chi Tiết",
     "venue": "Địa Điểm",
     "gallery": "Album Ảnh",
-    "rsvp": "Xác Nhận Tham Dự"
+    "rsvp": "Xác Nhận Tham Dự",
+    "love-story": "Câu Chuyện Tình Yêu"
   },
   "schedule": {
     "title": "Chương Trình Lễ Cưới",
@@ -179,5 +167,88 @@
     "play-music": "🎵 Phát Nhạc",
     "later": "Để sau",
     "auto-note": "Nhạc sẽ tự động phát sau khi bạn bật tính năng này"
+  },
+  "loveStory": {
+    "title": "Câu Chuyện Tình Yêu",
+    "subtitle": "Hành trình từ những dòng code, những chuyến bay cho đến bến đỗ bình yên tại New Zealand.",
+    "viewPhotos": "Xem ảnh mốc này →",
+    "viewAlbum": "Xem album kỷ niệm",
+    "viewAllPhotos": "Xem Toàn Bộ Album Ảnh",
+    "items": {
+      "linkedin": {
+        "badge": "Lời Chào LinkedIn",
+        "title": "Mối Duyên Kì Lạ",
+        "description": "Nhờ người anh đồng nghiệp cũ kết nối, hai đứa gặp nhau qua... LinkedIn."
+      },
+      "firstMeet": {
+        "badge": "Chuyến Bay Đầu Tiên",
+        "title": "Cuộc Gặp Trực Tiếp & Lời Tỏ Tình",
+        "description": "Sau 2 tháng trò chuyện hợp cạ, anh quyết định bay về Việt Nam gặp mình."
+      },
+      "chinaTour": {
+        "badge": "Chuyến Đi Trung Quốc",
+        "title": "Sinh Nhật Đáng Nhớ & Du Lịch Quảng Châu",
+        "description": "Mình sang thăm anh, đón sinh nhật tại Disneyland Thượng Hải và cùng nhau khám phá Quảng Châu."
+      },
+      "vietnamTour": {
+        "badge": "Hành Trình Xuyên Việt",
+        "title": "Rong Buổi Cùng Nhau",
+        "description": "Hai đứa cùng nhau xách balo vi vu qua Hà Nội, Đà Nẵng và Huế."
+      },
+      "newZealand": {
+        "badge": "Bến Đỗ New Zealand",
+        "title": "Bank family",
+        "description": "Cùng dừng chân tại New Zealand để xây dựng sự nghiệp: Anh làm BNZ, mình làm Westpac."
+      },
+      "prewedding": {
+        "badge": "Chung Đôi",
+        "title": "Bộ Ảnh Pre-Wedding",
+        "description": "Những khung hình đong đầy hạnh phúc, ghi dấu ngày hai đứa chính thức về chung một nhà."
+      }
+    }
+  },
+  "gallery": {
+    "categories": {
+      "all": "Tất Cả",
+      "prewedding": "Pre-wedding",
+      "linkedin": "Mới Quen",
+      "firstMeet": "Lần Đầu Gặp",
+      "chinaTour": "Trung Quốc",
+      "vietnamTour": "Xuyên Việt",
+      "newZealand": "New Zealand"
+    },
+    "title": "Bộ Ảnh Kỷ Niệm",
+    "journeyTitle": "Hành Trình Yêu Thương",
+    "journeySubtitle": "Những khoảnh khắc đẹp nhất của chúng mình",
+    "viewFull": "Xem Tất Cả Ảnh",
+    "fullAlbumTitle": "Bộ Sưu Tập Kỷ Niệm",
+    "fullAlbumSubtitle": "Tổng hợp những khoảnh khắc đáng nhớ",
+    "clickToZoom": "Click để phóng to",
+    "items": {
+      "pre1": { "title": "Khởi Đầu Hành Trình", "desc": "Nhẹ nhàng bước bên nhau trong nắng mai" },
+      "pre2": { "title": "Lời Hứa Hạnh Phúc", "desc": "Khoảnh khắc trao nhau ánh nhìn đong đầy yêu thương" },
+      "pre3": { "title": "Bên Nhau Bình Yên", "desc": "Nắm tay qua từng góc phố thân quen" },
+      "pre4": { "title": "Dưới Ánh Nắng Chiều", "desc": "Ghi lại những khung hình lãng mạn" },
+      "pre5": { "title": "Nụ Cười Rạng Rỡ", "desc": "Niềm hạnh phúc đong đầy trong ánh mắt" },
+      "pre6": { "title": "Góc Phố Kỷ Niệm", "desc": "Sự gắn kết tự nhiên và dịu dàng" },
+      "pre7": { "title": "Thương Yêu Đong Đầy", "desc": "Cùng nhìn về một hướng tương lai" },
+      "pre8": { "title": "Ánh Nắng Ban Mai", "desc": "Rạng rỡ trong khoảnh khắc ngọt ngào" },
+      "pre9": { "title": "Chút Tình Thơ Mộng", "desc": "Ghi dấu những phút giây dịu dàng bên nhau" },
+      "pre10": { "title": "Vòng Tay Bình Yên", "desc": "Ấm áp và trọn vẹn từng khoảnh khắc" },
+      "pre11": { "title": "Nụ Cười Hạnh Phúc", "desc": "Ánh mắt trao nhau thay lời muốn nói" },
+      "pre12": { "title": "Hướng Về Tương Lai", "desc": "Cùng nhau viết tiếp câu chuyện tình yêu" },
+      "pre13": { "title": "Sắc Hoa Hạnh Phúc", "desc": "Điểm nhấn dịu dàng cho ngày chung đôi" },
+       "pre14": { "title": "Khoảnh Khắc Đáng Nhớ", "desc": "Một khoảnh khắc đẹp đẽ trong hành trình yêu thương" },
+      "mem1": { "title": "Sinh nhật đặc biệt", "desc": "Lần đầu tổ chức sinh nhật cho Mia tại Disney Land Thượng Hải" },
+      "mem2": { "title": "Dấu Chân Kỷ Niệm", "desc": "Chuyến du lịch đầu tiên cùng nhau tại Quảng Châu" },
+      "mem3": { "title": "May Mắn Săn Cực Quang", "desc": "Lần đầu tiên săn cực quang tại New Zealand" },
+      "mem4": { "title": "Chơi Tuyết Lần Đầu", "desc": "Lần đầu cùng nhau chơi tuyết tại Tekapo, New Zealand" },
+      "mem5": { "title": "Mối Duyên Kì Lạ", "desc": "Nhờ người anh đồng nghiệp cũ kết nối, hai đứa gặp nhau qua... LinkedIn." },
+      "mem6": { "title": "Hành trình khám phá", "desc": "Cùng nhau khám phá Thượng Hải và thưởng thức những món ăn tại Trung Quốc" },
+      "firstMeet": { "title": "Những ngày đầu", "desc": "Những khoảnh khắc đáng nhớ khi hai đứa lần đầu gặp nhau" },
+      "inLove": { "title": "Chính thức hẹn hò", "desc": "Chính thức công khai hẹn hò" },
+      "vietnamTour": { "title": "Hành trình xuyên Việt", "desc": "Cùng nhau rong ruổi qua Hà Nội, Đà Nẵng và Huế" },
+      "newZealand": { "title": "Bến đỗ New Zealand", "desc": "Cùng dừng chân tại New Zealand để xây dựng sự nghiệp: Anh làm BNZ, mình làm Westpac." }
+    }
   }
 }

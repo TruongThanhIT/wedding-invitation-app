@@ -1,15 +1,14 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
-import { useScrollSpy } from '@/hooks/use-scroll-spy';
-import { LetterAnimation } from '@/components';
+import { useState, useEffect } from "react";
+import { useScrollSpy } from "@/hooks/use-scroll-spy";
+import { LetterAnimation } from "@/components";
 import {
   HeroSection,
   CoupleIntroduction,
   WeddingDetailsCard,
   CountdownTimer,
   VenueInformation,
-  EventSchedule,
   RSVP,
   GalleryPreview,
   ClosingMessage,
@@ -17,16 +16,22 @@ import {
   NavigationFAB,
   MusicPlayer,
   ScrollProgressIndicator,
-} from '../components';
-import { NAVIGATION_SECTIONS, WEDDING_CONFIG } from '@/constants';
+  LoveStory,
+} from "../components";
+import { NAVIGATION_SECTIONS, WEDDING_CONFIG } from "@/constants";
 
 export default function HomeView() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [showLetter, setShowLetter] = useState(true);
 
+  // 1. STATE QUẢN LÝ CATEGORY KHI CLICK TỪ TIMELINE SANG GALLERY
+  const [activeCategory, setActiveCategory] = useState<
+    "all" | "prewedding" | "memories"
+  >("all");
+
   // Auto-detect active section using scroll spy
   const activeSection = useScrollSpy(
-    NAVIGATION_SECTIONS.map((section) => section.id)
+    NAVIGATION_SECTIONS.map((section) => section.id),
   );
 
   useEffect(() => {
@@ -42,8 +47,8 @@ export default function HomeView() {
 
     if (element) {
       element.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
+        behavior: "smooth",
+        block: "start",
       });
     }
   };
@@ -102,14 +107,22 @@ export default function HomeView() {
         <VenueInformation venue={WEDDING_CONFIG.venue} />
       </section>
 
-      {/* Gallery Preview */}
-      <section id="gallery" className="relative">
-        <GalleryPreview />
-      </section>
-
       {/* RSVP Section */}
       <section id="rsvp" className="relative">
         <RSVP />
+      </section>
+
+      {/* 2. CÂU CHUYỆN TÌNH YÊU (LOVE STORY) - ĐẶT TRƯỚC GALLERY */}
+      <section id="love-story" className="relative">
+        <LoveStory onSelectCategory={(cat) => setActiveCategory(cat as any)} />
+      </section>
+
+      {/* 3. BỘ ẢNH KỶ NIỆM (GALLERY PREVIEW) - NHẬN STATE DỰA TRÊN TIMELINE CLICK */}
+      <section id="gallery" className="relative scroll-mt-20">
+        <GalleryPreview
+          activeCategory={activeCategory}
+          onChangeCategory={(cat) => setActiveCategory(cat as any)}
+        />
       </section>
 
       {/* Closing Message */}
