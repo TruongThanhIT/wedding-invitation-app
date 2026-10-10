@@ -58,7 +58,10 @@ export const RSVP = () => {
     } catch (error) {
       console.error("Lỗi khi gửi RSVP:", error);
       alert(
-        "Có lỗi xảy ra khi gửi RSVP. Bạn vui lòng thử lại hoặc nhắn cho Dâu Rể nhé!",
+        t(
+          "rsvp.error-alert",
+          "Có lỗi xảy ra khi gửi RSVP. Bạn vui lòng thử lại hoặc nhắn cho Dâu Rể nhé!",
+        ),
       );
     } finally {
       setIsSubmitting(false);
@@ -90,13 +93,10 @@ export const RSVP = () => {
               <span className="text-4xl">✅</span>
             </div>
             <h3 className="text-2xl sm:text-3xl md:text-4xl font-serif text-gray-800 mb-4">
-              {t("rsvp.thank-you", "Cảm ơn bạn!")}
+              {t("rsvp.thank-you")}
             </h3>
             <p className="text-gray-600 text-base sm:text-lg md:text-xl">
-              {t(
-                "rsvp.thank-you-received",
-                "Dâu Rể đã nhận được phản hồi từ bạn rồi nhé 💕",
-              )}
+              {t("rsvp.thank-you-received")}
             </p>
             <div className="mt-6 text-2xl">💕</div>
           </motion.div>
@@ -146,7 +146,7 @@ export const RSVP = () => {
                     htmlFor="name"
                     className="block text-xs sm:text-sm font-medium text-gray-700 mb-2"
                   >
-                    {t("rsvp.full-name", "Họ và Tên")} *
+                    {t("rsvp.full-name")} *
                   </label>
                   <input
                     type="text"
@@ -155,21 +155,18 @@ export const RSVP = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-rose-400 focus:border-transparent outline-none transition-all duration-300"
-                    placeholder={t(
-                      "rsvp.full-name-placeholder",
-                      "Nhập họ và tên",
-                    )}
+                    className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-rose-400 focus:border-transparent outline-none transition-all duration-300 text-gray-800 placeholder:text-gray-400 placeholder:font-medium"
+                    placeholder={t("rsvp.full-name-placeholder")}
                   />
                 </div>
 
-                {/* Email (Bắt buộc để gửi reminder / cám ơn) */}
+                {/* Email */}
                 <div>
                   <label
                     htmlFor="email"
                     className="block text-xs sm:text-sm font-medium text-gray-700 mb-2"
                   >
-                    {t("rsvp.email-address", "Địa chỉ Email")} *
+                    {t("rsvp.email-address")} *
                   </label>
                   <input
                     type="email"
@@ -178,11 +175,8 @@ export const RSVP = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-rose-400 focus:border-transparent outline-none transition-all duration-300"
-                    placeholder={t(
-                      "rsvp.email-placeholder",
-                      "email@example.com",
-                    )}
+                    className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-rose-400 focus:border-transparent outline-none transition-all duration-300 text-gray-800 placeholder:text-gray-400 placeholder:font-medium"
+                    placeholder={t("rsvp.email-placeholder")}
                   />
                 </div>
 
@@ -192,7 +186,7 @@ export const RSVP = () => {
                     htmlFor="attendance"
                     className="block text-xs sm:text-sm font-medium text-gray-700 mb-2"
                   >
-                    {t("rsvp.will-attend", "Bạn sẽ tham dự chứ?")} *
+                    {t("rsvp.will-attend")} *
                   </label>
                   <select
                     id="attendance"
@@ -200,17 +194,11 @@ export const RSVP = () => {
                     value={formData.attendance}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-rose-400 focus:border-transparent outline-none transition-all duration-300"
+                    className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-rose-400 focus:border-transparent outline-none transition-all duration-300 text-gray-500 placeholder:text-gray-400 placeholder:font-medium"
                   >
-                    <option value="">
-                      {t("rsvp.please-select", "-- Chọn câu trả lời --")}
-                    </option>
-                    <option value="yes">
-                      {t("rsvp.yes-there", "Có, mình chắc chắn sẽ đến")}
-                    </option>
-                    <option value="no">
-                      {t("rsvp.no-cant", "Rất tiếc, mình không thể đến")}
-                    </option>
+                    <option value="">{t("rsvp.please-select")}</option>
+                    <option value="yes">{t("rsvp.yes-there")}</option>
+                    <option value="no">{t("rsvp.no-cant")}</option>
                   </select>
                 </div>
 
@@ -221,35 +209,24 @@ export const RSVP = () => {
                       htmlFor="guests"
                       className="block text-xs sm:text-sm font-medium text-gray-700 mb-2"
                     >
-                      {t(
-                        "rsvp.number-guests",
-                        "Số lượng người đi cùng (tính cả bạn)",
-                      )}
+                      {t("rsvp.number-guests")}
                     </label>
                     <select
                       id="guests"
                       name="guests"
                       value={formData.guests}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-rose-400 focus:border-transparent outline-none transition-all duration-300"
+                      className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-rose-400 focus:border-transparent outline-none transition-all duration-300 text-gray-500 placeholder:text-gray-400 placeholder:font-medium"
                     >
-                      <option value="1">
-                        {t("rsvp.guest-1", "1 người (Chỉ mình tôi)")}
-                      </option>
+                      <option value="1">{t("rsvp.guest-1")}</option>
                       <option value="2">
-                        {t("rsvp.guests-count", "{{count}} người", {
-                          count: 2,
-                        })}
+                        {t("rsvp.guests-count", { count: 2 })}
                       </option>
                       <option value="3">
-                        {t("rsvp.guests-count", "{{count}} người", {
-                          count: 3,
-                        })}
+                        {t("rsvp.guests-count", { count: 3 })}
                       </option>
                       <option value="4">
-                        {t("rsvp.guests-count", "{{count}} người", {
-                          count: 4,
-                        })}
+                        {t("rsvp.guests-count", { count: 4 })}
                       </option>
                     </select>
                   </div>
@@ -261,7 +238,7 @@ export const RSVP = () => {
                     htmlFor="message"
                     className="block text-xs sm:text-sm font-medium text-gray-700 mb-2"
                   >
-                    {t("rsvp.message-couple", "Lời chúc gửi tới Dâu Rể")}
+                    {t("rsvp.message-couple")}
                   </label>
                   <textarea
                     id="message"
@@ -269,11 +246,8 @@ export const RSVP = () => {
                     value={formData.message}
                     onChange={handleChange}
                     rows={4}
-                    className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-rose-400 focus:border-transparent outline-none transition-all duration-300 resize-none"
-                    placeholder={t(
-                      "rsvp.message-placeholder",
-                      "Gửi lời chúc mừng...",
-                    )}
+                    className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-rose-400 focus:border-transparent outline-none transition-all duration-300 resize-none text-gray-800 placeholder:text-gray-400 placeholder:font-medium"
+                    placeholder={t("rsvp.message-placeholder")}
                   />
                 </div>
 
@@ -284,8 +258,8 @@ export const RSVP = () => {
                   className="w-full bg-gradient-to-r from-rose-400 to-pink-500 text-white py-4 px-6 rounded-xl font-medium text-base sm:text-lg hover:from-rose-500 hover:to-pink-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isSubmitting
-                    ? "Đang gửi..."
-                    : t("rsvp.send-rsvp", "Gửi xác nhận RSVP")}
+                    ? t("rsvp.submitting", "Đang gửi...")
+                    : t("rsvp.send-rsvp")}
                 </button>
               </form>
             </div>
@@ -318,27 +292,6 @@ export const RSVP = () => {
               </p>
             </div>
 
-            {/* Contact Info */}
-            <div className="bg-white rounded-2xl p-6 shadow-lg border border-rose-100">
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
-                  <span className="text-blue-600 text-xl">📞</span>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-800 text-sm sm:text-base">
-                    {t("rsvp.questions")}
-                  </h4>
-                  <p className="text-gray-600 text-xs sm:text-sm">
-                    {t("rsvp.questions-help")}
-                  </p>
-                </div>
-              </div>
-              <div className="space-y-2 text-xs sm:text-sm text-gray-600">
-                <p>📧 truongthanh.it95@gmail.com</p>
-                <p>📱 (+84) 782 808 428 (Zalo)</p>
-              </div>
-            </div>
-
             {/* Gift Registry */}
             <div className="bg-gradient-to-br from-rose-50/80 via-white to-pink-50/80 rounded-2xl p-6 shadow-lg border border-rose-100 relative overflow-hidden">
               <div className="flex items-center mb-4">
@@ -347,22 +300,16 @@ export const RSVP = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-800 text-sm sm:text-base">
-                    {t("rsvp.gift-registry-title", "Hộp Chúc Phúc Online 💌")}
+                    {t("rsvp.gift-registry-title")}
                   </h4>
                   <p className="text-gray-600 text-xs sm:text-sm font-medium text-rose-500">
-                    {t(
-                      "rsvp.presence-is-present",
-                      "Thành thật mà nói, sự hiện diện của bạn để quậy cùng Dâu Rể đã là món quà lớn nhất rồi!",
-                    )}
+                    {t("rsvp.presence-is-present")}
                   </p>
                 </div>
               </div>
 
               <p className="text-gray-600 text-xs sm:text-sm leading-relaxed mb-4">
-                {t(
-                  "rsvp.gift-message",
-                  "Tuy nhiên, nếu bạn muốn gửi chút 'hạt lúa' chúc phúc mà ngại mang tiền mặt hay đỡ phải đi tìm cây ATM rút tiền/ghi bao thư giấy, thì có thể 'ting ting' nhanh qua mã QR bên dưới nha. Thương lắm!",
-                )}
+                {t("rsvp.gift-message")}
               </p>
 
               <div className="bg-white/90 backdrop-blur-sm rounded-xl p-4 border border-rose-100/80 shadow-inner">
@@ -377,25 +324,25 @@ export const RSVP = () => {
 
                   <div className="text-center sm:text-left text-xs sm:text-sm space-y-1.5 text-gray-700 w-full">
                     <p className="font-semibold text-rose-600 text-sm">
-                      Ngân hàng:{" "}
+                      {t("rsvp.bank-label")}{" "}
                       <span className="text-gray-800 font-bold">
-                        Techcombank
+                        {t("rsvp.bank-name")}
                       </span>
                     </p>
                     <p>
-                      Số tài khoản:{" "}
+                      {t("rsvp.bank-account-label")}{" "}
                       <span className="font-mono font-bold text-gray-900 select-all">
-                        9565 2207 95
+                        {t("rsvp.bank-account-number")}
                       </span>
                     </p>
                     <p>
-                      Chủ tài khoản:{" "}
+                      {t("rsvp.bank-holder-label")}{" "}
                       <span className="font-semibold uppercase text-gray-800">
-                        Trương Huỳnh Thụy Thái Thanh
+                        {t("rsvp.bank-holder-name")}
                       </span>
                     </p>
                     <p className="text-[11px] text-gray-500 italic mt-1">
-                      Nội dung: Mung cuoi Thanh va Zhe - [Tên của bạn]
+                      {t("rsvp.bank-note")}
                     </p>
                   </div>
                 </div>

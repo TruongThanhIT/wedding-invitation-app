@@ -92,14 +92,12 @@ export default function HomeView() {
           isVisible={isLoaded}
         />
       </section>
-
       {/* Wedding Details */}
       <section id="details" className="relative">
         <WeddingDetailsCard
           date={WEDDING_CONFIG.date}
           venue={WEDDING_CONFIG.venue}
         />
-        <CountdownTimer targetDate={WEDDING_CONFIG.date} />
       </section>
 
       {/* Venue Information */}
@@ -131,6 +129,7 @@ export default function HomeView() {
           bride={WEDDING_CONFIG.bride.fullName}
           groom={WEDDING_CONFIG.groom.fullName}
         />
+         <CountdownTimer targetDate={WEDDING_CONFIG.date} />
       </section>
 
       {/* Music Player */}

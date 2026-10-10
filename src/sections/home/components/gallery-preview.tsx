@@ -9,6 +9,7 @@ import { useTranslation } from "react-i18next";
 type CategoryType =
   | "all"
   | "prewedding"
+  | "propose"
   | "linkedin"
   | "firstMeet"
   | "chinaTour"
@@ -98,10 +99,32 @@ export const GalleryPreview = ({
       id: 24,
       category: "prewedding",
       src: "/assets/images/gallery/prewedding-14.jpg",
-      titleKey: "gallery.items.pre6.title",
-      descriptionKey: "gallery.items.pre6.desc",
+      titleKey: "gallery.items.pre7.title",
+      descriptionKey: "gallery.items.pre7.desc",
     },
 
+    // PROPOSE
+    {
+      id: 27,
+      category: "propose",
+      src: "/assets/images/gallery/propose-1.png",
+      titleKey: "gallery.items.propose1.title",
+      descriptionKey: "gallery.items.propose1.desc",
+    },
+     {
+      id: 28,
+      category: "propose",
+      src: "/assets/images/gallery/propose-2.png",
+      titleKey: "gallery.items.propose2.title",
+      descriptionKey: "gallery.items.propose2.desc",
+    },
+    {
+      id: 29,
+      category: "propose",
+      src: "/assets/images/gallery/propose-3.png",
+      titleKey: "gallery.items.propose3.title",
+      descriptionKey: "gallery.items.propose3.desc",
+    },
     // --- LINKEDIN / MỐI DUYÊN ---
     {
       id: 19,
@@ -117,14 +140,14 @@ export const GalleryPreview = ({
       category: "firstMeet",
       src: "/assets/images/gallery/story-2.jpg",
       titleKey: "gallery.items.firstMeet.title",
-      descriptionKey: "gallery.items.firstMeet.description",
+      descriptionKey: "gallery.items.firstMeet.desc",
     },
     {
       id: 23,
       category: "firstMeet",
       src: "/assets/images/gallery/story-4.png",
       titleKey: "gallery.items.inLove.title",
-      descriptionKey: "gallery.items.inLove.description",
+      descriptionKey: "gallery.items.inLove.desc",
     },
 
     // --- DU LỊCH TRUNG QUỐC ---
@@ -155,22 +178,22 @@ export const GalleryPreview = ({
       id: 21,
       category: "vietnamTour",
       src: "/assets/images/gallery/story-3.png",
-      titleKey: "gallery.items.vietnamTour.title",
-      descriptionKey: "gallery.items.vietnamTour.description",
+      titleKey: "gallery.items.vietnamTour1.title",
+      descriptionKey: "gallery.items.vietnamTour1.desc",
     },
     {
       id: 26,
       category: "vietnamTour",
       src: "/assets/images/gallery/travel-7.png",
-      titleKey: "gallery.items.vietnamTour.title",
-      descriptionKey: "gallery.items.vietnamTour.description",
+      titleKey: "gallery.items.vietnamTour2.title",
+      descriptionKey: "gallery.items.vietnamTour2.desc",
     },
     {
       id: 25,
       category: "vietnamTour",
       src: "/assets/images/gallery/travel-8.png",
-      titleKey: "gallery.items.vietnamTour.title",
-      descriptionKey: "gallery.items.vietnamTour.description",
+      titleKey: "gallery.items.vietnamTour3.title",
+      descriptionKey: "gallery.items.vietnamTour3.desc",
     },
 
     // --- BẾN ĐỖ NEW ZEALAND ---
@@ -222,6 +245,7 @@ export const GalleryPreview = ({
   const tabs: { key: CategoryType; labelKey: string }[] = [
     { key: "all", labelKey: "gallery.categories.all" },
     { key: "prewedding", labelKey: "gallery.categories.prewedding" },
+    { key: "propose", labelKey: "gallery.categories.propose" },
     { key: "linkedin", labelKey: "gallery.categories.linkedin" },
     { key: "firstMeet", labelKey: "gallery.categories.firstMeet" },
     { key: "chinaTour", labelKey: "gallery.categories.chinaTour" },

@@ -1,38 +1,38 @@
 {
   "letter": {
-    "guest": "Guest",
-    "dear": "Dear",
-    "you-are-invited": "We cordially invite you to join us in celebrating our wedding day",
+    "guest": "You",
+    "dear": "Dear friends,",
+    "you-are-invited": "We’d love for you to join us as we celebrate our wedding.",
     "to": "to",
-    "invitation-title": "Please join us in celebrating our special day",
-    "invitation-quote": "Our world completely changed from the moment we met...",
-    "click-to-open-hover": "Click here to open invitation",
-    "click-to-open": "Click invitation to open",
-    "opening-the-invitation": "Opening invitation..."
+    "invitation-title": "Come celebrate our special day with us!",
+    "invitation-quote": "Since we met, our world has been filled with so many beautiful little moments...",
+    "click-to-open-hover": "Tap here to open the invitation",
+    "click-to-open": "Tap the invitation to open it",
+    "opening-the-invitation": "Opening the invitation..."
   },
   "closing-message": {
-    "title": "We Look Forward to Celebrating With You",
-    "quote": "Your presence in our lives is a true blessing, and sharing this special day with you will make our happiness complete. Thank you for being a part of our love story.",
+    "title": "We’d Be So Happy to Have You",
+    "quote": "Having you celebrate with us would make our special day even more meaningful. Thank you for being part of our journey.",
     "with-love": "With love,",
-    "hashtags": "#FiqriAndMio2025 #LoveWins #ForeverStartsNow",
-    "contact": "Have questions? Contact us via Zalo: +84 782 808 428 or Email: truongthanh.it95@gmail.com"
+    "hashtags": "#LoveWins #ForeverStartsNow",
+    "contact": "If you have any questions, feel free to reach us on Zalo at +84 782 808 428 or email us at truongthanh.it95@gmail.com!"
   },
   "hero": {
     "welcome": "Welcome to Our Wedding Celebration",
-    "together": "Together Forever",
+    "together": "Starting Our Forever Together",
     "scroll-down": "Scroll Down",
-    "scroll-to-explore": "Scroll down to discover our love story",
+    "scroll-to-explore": "Scroll down to discover our story",
     "view-details": "View Details"
   },
   "couple": {
     "title": "The Bride & Groom",
-    "bride-description": "A gentle soul with a heart full of love and dreams of a happy future together.",
-    "groom-description": "A warm partner who always brings joy and laughter to every single day.",
-    "our-story": "Our Love Story",
-    "story-text": "Our journey began with a simple hello and bloomed into our beautiful love story. We are overjoyed to share this special day with all of you.",
-    "the-groom": "The Groom",
-    "the-bride": "The Bride",
-    "love-quote": "You are the only person I want to watch every sunrise and sunset with."
+    "bride-description": "A gentle soul with a heart full of love and dreams for the future.",
+    "groom-description": "A warm-hearted partner who brings laughter and joy to life’s little moments.",
+    "our-story": "Our Story",
+    "story-text": "Our story began with a simple hello and slowly grew into a journey filled with love. We’re so happy to share this special day with all of you.",
+    "the-groom": "Groom",
+    "the-bride": "Bride",
+    "love-quote": "The one I want to watch every sunrise and sunset with, today and always."
   },
   "details": {
     "title": "Wedding Details",
@@ -41,214 +41,326 @@
     "day": "Day",
     "month": "Month",
     "year": "Year",
-    "countdown": "Countdown to Our Wedding Day",
+    "countdown": "Wedding Countdown",
     "hours": "Hours",
     "minutes": "Minutes",
     "seconds": "Seconds",
-    "countdown-title": "Countdown to Forever",
-    "countdown-subtitle": "Every passing moment brings us closer to our big day",
-    "days-until": "days until we tie the knot! 💕",
-    "hours-until": "hours until we tie the knot! 💕",
-    "minutes-until": "minutes until we tie the knot! 💕",
-    "moment-arrived": "The big moment has arrived! 💕",
-    "join-us-text": "Join us as we exchange our vows and begin this new journey together",
-    "mark-calendar": "Mark your calendar! 📅",
+    "countdown-title": "Counting Down to Our Forever",
+    "countdown-subtitle": "Every passing moment brings us closer to our special day",
+    "days-until": "days until we begin our life together! 💕",
+    "hours-until": "hours until we begin our life together! 💕",
+    "minutes-until": "minutes until we begin our life together! 💕",
+    "moment-arrived": "The big moment is here! 💕",
+    "join-us-text": "We’d love for you to celebrate with us as we begin this new chapter",
+    "mark-calendar": "Save the date! 📅",
     "add-to-calendar": "Add to Calendar",
-    "message": "Don't miss our big day! Add this event to your calendar for a quick reminder.",
-    "ceremony": "Bridal Residence Ceremony",
+    "message": "Don’t forget our special day! Add the event to your calendar so it’s easy to remember.",
+    "ceremony": "Vietnamese Wedding Ceremony",
     "get-directions": "Get Directions",
     "reception": "Wedding Reception",
-    "please-note": "Please Note",
+    "please-note": "A Few Notes",
     "dress-code": "Dress Code",
-    "formal-attire": "Pink, White, or Cream tones",
-    "parking": "Parking Information",
-    "valet-available": "On-site parking available for motorbikes and cars",
+    "formal-attire": "Pink, white, or cream attire",
+    "parking": "Parking",
+    "valet-available": "Motorbike and car parking is available at the venue",
     "contact": "Contact (Zalo)",
     "our-wedding-day": "Our Wedding Day",
-    "join-us": "Join us in our celebration!"
+    "join-us": "Come celebrate with us!"
   },
   "venue": {
-    "title": "Wedding Venue",
-    "ceremony": "Bridal Residence Ceremony",
+    "title": "Venue",
+    "ceremony": "Vietnamese Wedding Ceremony",
     "reception": "Wedding Reception",
     "get-directions": "Get Directions",
-    "schedule-title": "Event Schedule",
+    "schedule-title": "Wedding Day Schedule",
     "preparation": "Preparation",
-    "ceremony-time": "CEREMONY",
+    "ceremony-time": "WEDDING CEREMONY",
     "reception-time": "WEDDING RECEPTION",
-    "party": "After Party",
-    "location-title": "Location & Venue",
-    "location-subtitle": "Join us at these beautiful locations as we celebrate our special day",
-    "ceremony-details": "Guest Information",
+    "party": "After-Party",
+    "location-title": "Venue & Location",
+    "location-subtitle": "We’d love to celebrate with you at the venues below",
+    "ceremony-details": "A Few Helpful Notes",
     "reception-details": "Reception Details",
-    "arrive-early": "An intimate ancestral ceremony with close family and dear relatives",
-    "unplugged": "We warmly invite you to join our Wedding Reception at the restaurant",
-    "parking": "Guests attending the ceremony at the family home will receive individual details.",
+    "arrive-early": "The family ceremony will be an intimate gathering with family and close relatives",
+    "unplugged": "We can’t wait to celebrate with you at the restaurant reception",
+    "parking": "If you’re attending the ceremony at our home, please look out for a separate message from us.",
     "welcome-drink": "11:00 AM • Guest Arrival",
-    "open-bar": "11:30 AM • Feast Begins",
-    "dancing": "Parking: Free motorbikes & cars parking available inside the venue.",
+    "open-bar": "11:30 AM • Reception Begins",
+    "dancing": "Parking: Motorbike and car spaces are available on-site.",
     "view-map": "View on Map"
   },
   "rsvp": {
-    "title": "RSVP",
-    "subtitle": "Help us prepare the best welcome for you",
+    "title": "Confirm Attendance",
+    "subtitle": "Please let us know if you can make it so we can prepare for everyone",
     "name": "Full Name",
     "email": "Email Address",
-    "attendance": "Will you be attending?",
-    "yes": "Yes, I'll be there!",
-    "no": "Sorry, I can't make it",
-    "guests": "Number of Accompanying Guests",
-    "message": "Special Note / Wish (Optional)",
+    "attendance": "Will you be joining us?",
+    "yes": "Yes, I’ll be there!",
+    "no": "Sorry, I can’t make it",
+    "guests": "Number of Guests",
+    "message": "A Message for Us (Optional)",
     "submit": "Submit RSVP",
-    "thank-you": "Thank you for confirming your attendance!",
-    "confirm-attendance": "Confirm Your Attendance",
+    "thank-you": "Thanks for letting us know!",
+    "confirm-attendance": "Confirm Attendance",
     "full-name": "Full Name",
     "email-address": "Email Address",
-    "will-attend": "Will you be attending?",
-    "please-select": "Please select",
-    "yes-there": "Yes, I'll be there! 🎉",
-    "no-cant": "Regretfully, I can't make it 😢",
-    "number-guests": "Number of Accompanying Guests",
-    "guest-count": "Guest",
-    "guest-1": "1 person (Just me)",
+    "will-attend": "Will you be joining us?",
+    "please-select": "Please select an option",
+    "yes-there": "Yes, I’ll be there! 🎉",
+    "no-cant": "Sorry, I can’t make it 😢",
+    "number-guests": "Number of Guests",
+    "guest-count": "guest(s)",
+    "guest-1": "Just me (1 person)",
     "guests-count": "{{count}} guests",
-    "dietary-restrictions": "Dietary Restrictions / Allergies",
-    "dietary-placeholder": "Do you have any food allergies or require a vegetarian/special menu?",
-    "message-couple": "Wishes for the Bride & Groom",
-    "message-placeholder": "Send your warmest wishes to the bride and groom...",
-    "send-rsvp": "Send RSVP 💕",
-    "thank-you-received": "We have received your confirmation. Looking forward to welcoming you!",
+    "dietary-restrictions": "Dietary Requirements / Allergies",
+    "dietary-placeholder": "Do you have any food allergies or dietary requirements (e.g. vegetarian)?",
+    "message-couple": "A Message for the Couple",
+    "message-placeholder": "Leave us a lovely message...",
+    "send-rsvp": "Submit RSVP 💕",
+    "thank-you-received": "We’ve received your RSVP. We look forward to seeing you on our special day!",
     "deadline": "RSVP Deadline",
-    "deadline-date": "December 22, 2026",
-    "deadline-help": "Please respond by this date to help us make the best arrangements.",
-    "questions": "Have Any Questions?",
-    "questions-help": "We are always here to help!",
-    "gift-registry": "Wedding Gift Registry",
+    "deadline-date": "December 20, 2026",
+    "deadline-help": "Please RSVP by this date so we can make the necessary arrangements. Thanks so much!",
+    "questions": "Any Questions?",
+    "questions-help": "If you have any questions, feel free to get in touch!",
+    "gift-registry": "Wedding Gifts",
     "presence-present": "Your presence is the greatest gift to us",
-    "registry-text": "If you wish to send a gift to the newlyweds, please see below:"
+    "registry-text": "If you’d like to send us a wedding gift, you’ll find the details below.",
+    "full-name-placeholder": "Enter your full name",
+    "email-placeholder": "email@gmail.com",
+    "submitting": "Submitting...",
+    "gift-registry-title": "Online Wedding Gift 💌",
+    "presence-is-present": "We’re already so happy to share this special moment with you! ❤️",
+    "gift-message": "If you’d like to send the couple a little something, you can scan the QR code below. It’s completely optional, so please don’t feel any pressure! 🥰 Thank you for all the love you’ve sent our way! 💗",
+    "bank-label": "Bank:",
+    "bank-name": "Techcombank",
+    "bank-account-label": "Account Number:",
+    "bank-account-number": "9565 2207 95",
+    "bank-holder-label": "Account Holder:",
+    "bank-holder-name": "Trương Huỳnh Thụy Thái Thanh",
+    "bank-note": "Reference: Wedding gift for Thanh and Zhe - [Your Name]",
+    "error-alert": "Something went wrong while submitting your RSVP. Please try again or message us directly."
   },
   "navigation": {
     "home": "Home",
-    "couple": "Bride & Groom",
+    "couple": "The Couple",
     "details": "Details",
     "venue": "Venue",
     "gallery": "Gallery",
     "rsvp": "RSVP",
-    "love-story": "Love Story"
+    "love-story": "Our Story"
   },
   "schedule": {
-    "title": "Wedding Program",
+    "title": "Wedding Day Schedule",
     "guest-arrival": "Guest Arrival & Seating",
-    "welcome-drinks": "Welcome drinks service",
-    "wedding-ceremony": "Bridal Residence Ceremony",
-    "vows": "Exchange of Vows Ceremony",
-    "photography": "Photo Session",
-    "welcome-drink": "Welcome drinks for guests",
+    "welcome-drinks": "Welcome Drinks",
+    "wedding-ceremony": "Vietnamese Wedding Ceremony",
+    "vows": "Exchange of Vows",
+    "photography": "Photos",
+    "welcome-drink": "Welcome Drinks",
     "reception-begins": "Reception Begins",
-    "dinner-celebration": "Banquet & Celebration",
+    "dinner-celebration": "Dinner & Celebration",
     "first-dance": "First Dance",
-    "special-moment": "Special moment of the bride & groom",
-    "dancing-party": "Dancing & Party",
+    "special-moment": "A Special Moment for the Couple",
+    "dancing-party": "Music & Dancing",
     "celebration-continues": "Let the celebration continue!",
-    "send-off": "Grand Send-off",
-    "sparkler-farewell": "Farewell send-off with handheld sparklers"
+    "send-off": "Farewell",
+    "sparkler-farewell": "Send the couple off with sparklers"
   },
   "music": {
     "wedding-music": "Wedding Background Music",
-    "click-to-start": "Click the music button to play!",
+    "click-to-start": "Tap the music button to play",
     "playing": "Playing",
     "paused": "Paused",
-    "enable-music": "Enable Wedding Music",
-    "browser-blocked": "Your browser auto-blocked background music. Please click the button below to turn it on.",
+    "enable-music": "Play Wedding Music",
+    "browser-blocked": "Your browser is blocking autoplay. Tap the button below to play the wedding music.",
     "how-to-enable": "How to Enable Autoplay:",
-    "chrome-edge": "Chrome/Edge: Click 🔒 on address bar → Sound → Allow",
-    "firefox": "Firefox: Click 🔊 on address bar → Allow audio",
-    "safari": "Safari: Settings → Website → Auto-Play → Allow All",
+    "chrome-edge": "Chrome/Edge: Click the 🔒 icon in the address bar → Sound → Allow",
+    "firefox": "Firefox: Click the 🔊 icon in the address bar → Allow audio",
+    "safari": "Safari: Settings → Websites → Auto-Play → Allow All",
     "play-music": "🎵 Play Music",
     "later": "Maybe Later",
-    "auto-note": "Music will automatically play after enabling this feature"
+    "auto-note": "Music will play automatically once this feature is enabled"
   },
   "loveStory": {
-    "title": "Our Love Story",
-    "subtitle": "A journey from lines of code and long flights to our peaceful home in New Zealand.",
-    "viewPhotos": "View photos from this milestone →",
-    "viewAlbum": "View memory album",
-    "viewAllPhotos": "View Full Photo Album",
+    "title": "Our Story",
+    "subtitle": "From lines of code and long flights to the peaceful place we now call home in New Zealand.",
+    "viewPhotos": "View Photos →",
+    "viewAlbum": "View Memory Album",
+    "viewAllPhotos": "View All Photos",
     "items": {
       "linkedin": {
-        "badge": "LinkedIn Hello",
-        "title": "A Special Connection",
-        "description": "Introduced by a former colleague, we met through... LinkedIn."
+        "badge": "A Hello on LinkedIn",
+        "title": "An Unexpected Connection",
+        "description": "An old colleague introduced us, and we met through... LinkedIn."
       },
       "firstMeet": {
         "badge": "The First Flight",
-        "title": "First Meeting & Love Proposal",
-        "description": "After 2 months of deep conversations, he decided to fly back to Vietnam to meet me."
+        "title": "Our First Meeting & A Confession",
+        "description": "After two months of hitting it off over messages, he flew to Vietnam to meet me."
       },
       "chinaTour": {
-        "badge": "Trip to China",
-        "title": "Memorable Birthday & Guangzhou Tour",
-        "description": "I visited him in China, celebrated my birthday at Shanghai Disneyland, and explored Guangzhou together."
+        "badge": "Our Trip to China",
+        "title": "An Unforgettable Birthday",
+        "description": "I went to visit him, celebrated a birthday at Shanghai Disneyland, and explored China together."
       },
       "vietnamTour": {
-        "badge": "Vietnam Backpacking Trip",
-        "title": "Exploring Together",
-        "description": "We packed our bags and traveled across Hanoi, Da Nang, and Hue."
+        "badge": "Our Vietnam Adventure",
+        "title": "Adventures Together",
+        "description": "We packed our bags and explored Vietnam together."
       },
       "newZealand": {
-        "badge": "New Zealand Haven",
-        "title": "Banking Family",
-        "description": "Settled down in New Zealand to build our careers: He works at BNZ, and I work at Westpac."
+        "badge": "Our New Zealand Home",
+        "title": "Building Our Future Together",
+        "description": "We chose New Zealand to build our careers and future together: he works at BNZ, and I work at Westpac."
+      },
+      "propose": {
+        "badge": "The Proposal",
+        "title": "A Special Moment",
+        "description": "Three hours of walking, two hiking trails, one question, and one happy yes. ❤️"
       },
       "prewedding": {
-        "badge": "Together as One",
-        "title": "Pre-Wedding Photoshoot",
-        "description": "Frames filled with happiness, marking the day we officially build a life together."
+        "badge": "Together at Last",
+        "title": "Pre-Wedding Album",
+        "description": "Snapshots capturing the love and joy of our journey toward forever."
       }
     }
   },
   "gallery": {
     "categories": {
       "all": "All",
-      "prewedding": "Pre-wedding",
-      "linkedin": "First Met",
-      "firstMeet": "First Date",
+      "prewedding": "Pre-Wedding",
+      "propose": "The Proposal",
+      "linkedin": "LinkedIn Hello",
+      "firstMeet": "First Meeting",
       "chinaTour": "China",
       "vietnamTour": "Vietnam",
       "newZealand": "New Zealand"
     },
-    "title": "Memory Album",
+    "title": "Our Photo Gallery",
     "journeyTitle": "Our Journey of Love",
-    "journeySubtitle": "Our favorite moments together",
+    "journeySubtitle": "Our most memorable moments",
     "viewFull": "View All Photos",
-    "fullAlbumTitle": "Memory Collection",
-    "fullAlbumSubtitle": "A compilation of our most cherishable moments",
-    "clickToZoom": "Click to enlarge",
+    "fullAlbumTitle": "Memories Collection",
+    "fullAlbumSubtitle": "A collection of our most cherished memories",
+    "clickToZoom": "Tap to enlarge",
     "items": {
-      "pre1": { "title": "Beginning of the Journey", "desc": "Walking gently side by side in the morning light" },
-      "pre2": { "title": "Promise of Happiness", "desc": "A moment shared with affectionate eyes" },
-      "pre3": { "title": "Peaceful Together", "desc": "Holding hands through familiar streets" },
-      "pre4": { "title": "Under the Afternoon Sun", "desc": "Capturing romantic moments" },
-      "pre5": { "title": "Radiant Smiles", "desc": "Eyes full of joy and happiness" },
-      "pre6": { "title": "Memory Street", "desc": "A natural and gentle connection" },
-      "pre7": { "title": "Abundant Love", "desc": "Looking toward a shared future together" },
-      "pre8": { "title": "Morning Sunshine", "desc": "Glowing in a sweet moment" },
-      "pre9": { "title": "A Touch of Romance", "desc": "Marking gentle minutes side by side" },
-      "pre10": { "title": "Embrace of Peace", "desc": "Warm and complete in every second" },
-      "pre11": { "title": "Happy Smiles", "desc": "Gazes speaking louder than words" },
-      "pre12": { "title": "Facing the Future", "desc": "Writing the next chapter of our love story" },
-      "pre13": { "title": "Blossom of Joy", "desc": "A sweet touch for our wedding day" },
-      "pre14": { "title": "Memorable Moment", "desc": "A beautiful snapshot in our journey of love" },
-      "mem1": { "title": "Special Birthday", "desc": "Celebrating Mia's birthday for the first time at Shanghai Disneyland" },
-      "mem2": { "title": "Footprints of Memories", "desc": "Our first trip together in Guangzhou" },
-      "mem3": { "title": "Aurora Chasing Luck", "desc": "Chasing the Southern Lights for the first time in New Zealand" },
-      "mem4": { "title": "First Snow Experience", "desc": "Playing in the snow together for the first time in Tekapo, New Zealand" },
-      "mem5": { "title": "A Special Connection", "desc": "Introduced by a former colleague, we met through... LinkedIn." },
-      "mem6": { "title": "Journey of Discovery", "desc": "Exploring Shanghai and tasting local dishes in China" },
-      "firstMeet": { "title": "The Early Days", "desc": "Unforgettable moments from our very first meeting" },
-      "inLove": { "title": "Officially Dating", "desc": "Making our relationship official" },
-      "vietnamTour": { "title": "Vietnam Tour", "desc": "Traveling together through Hanoi, Da Nang, and Hue" },
-      "newZealand": { "title": "New Zealand Haven", "desc": "Settled down in New Zealand to build our careers: He works at BNZ, and I work at Westpac." }
+      "pre1": {
+        "title": "The Beginning",
+        "desc": "Walking side by side in the morning sunshine"
+      },
+      "pre2": {
+        "title": "A Promise of Happiness",
+        "desc": "A loving glance shared between us"
+      },
+      "pre3": {
+        "title": "Peaceful Together",
+        "desc": "Hand in hand through familiar streets"
+      },
+      "pre4": {
+        "title": "In the Afternoon Sun",
+        "desc": "Capturing romantic moments"
+      },
+      "pre5": {
+        "title": "Radiant Smiles",
+        "desc": "Happiness shining in every glance"
+      },
+      "pre6": {
+        "title": "A Street of Memories",
+        "desc": "A gentle, effortless connection"
+      },
+      "pre7": {
+        "title": "Full of Love",
+        "desc": "Looking toward the future together"
+      },
+      "pre8": {
+        "title": "Morning Sunshine",
+        "desc": "Glowing in a sweet moment together"
+      },
+      "pre9": {
+        "title": "A Little Romance",
+        "desc": "Treasuring tender moments together"
+      },
+      "pre10": {
+        "title": "A Safe Embrace",
+        "desc": "Every moment together feels warm"
+      },
+      "pre11": {
+        "title": "Happy Smiles",
+        "desc": "Our eyes say what words cannot"
+      },
+      "pre12": {
+        "title": "Looking Ahead",
+        "desc": "Writing the next chapter of our story together"
+      },
+      "pre13": {
+        "title": "Flowers of Happiness",
+        "desc": "A delicate touch on our special day"
+      },
+      "pre14": {
+        "title": "A Moment to Remember",
+        "desc": "A beautiful memory on our journey of love"
+      },
+      "mem1": {
+        "title": "A Special Birthday",
+        "desc": "Celebrating Thanh’s birthday together for the first time at Shanghai Disneyland"
+      },
+      "mem2": {
+        "title": "Footprints of Memories",
+        "desc": "Our first trip together to Guangzhou"
+      },
+      "mem3": {
+        "title": "Lucky Aurora Hunt",
+        "desc": "Our first time chasing the Southern Lights in New Zealand"
+      },
+      "mem4": {
+        "title": "First Time in the Snow",
+        "desc": "Playing in the snow together for the first time in Tekapo, New Zealand"
+      },
+      "mem5": {
+        "title": "An Unexpected Connection",
+        "desc": "An old colleague introduced us, and we met through... LinkedIn."
+      },
+      "mem6": {
+        "title": "An Adventure of Discovery",
+        "desc": "Exploring Shanghai and enjoying delicious Chinese food together"
+      },
+      "firstMeet": {
+        "title": "The Early Days",
+        "desc": "Our first memories together in person"
+      },
+      "inLove": {
+        "title": "Officially Dating",
+        "desc": "The day we officially became a couple"
+      },
+      "vietnamTour1": {
+        "title": "Our Vietnam Journey",
+        "desc": "Exploring Hanoi together"
+      },
+      "vietnamTour2": {
+        "title": "Our Vietnam Journey",
+        "desc": "Boating in Trang An"
+      },
+      "vietnamTour3": {
+        "title": "Our Vietnam Journey",
+        "desc": "A photo at Da Nang’s Love Bridge"
+      },
+      "newZealand": {
+        "title": "Our New Zealand Home",
+        "desc": "We chose New Zealand to build our careers: he works at BNZ, and I work at Westpac."
+      },
+      "propose1": {
+        "title": "The Proposal",
+        "desc": "Yes, I do! ❤️"
+      },
+      "propose2": {
+        "title": "The Proposal",
+        "desc": "A photo that definitely isn’t showing off the ring at all ^^"
+      },
+      "propose3": {
+        "title": "The Proposal",
+        "desc": "We tried to take a serious photo, but somehow it turned silly"
+      }
     }
   }
 }

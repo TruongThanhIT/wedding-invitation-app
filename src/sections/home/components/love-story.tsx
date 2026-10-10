@@ -38,7 +38,7 @@ export const LoveStory = ({ onSelectCategory }: LoveStoryProps) => {
       badge: t("loveStory.items.chinaTour.badge"),
       title: t("loveStory.items.chinaTour.title"),
       description: t("loveStory.items.chinaTour.description"),
-      icon: "🏰",
+      icon: "🇨🇳",
       coverImage: "/assets/images/gallery/travel-1.jpg",
     },
     {
@@ -46,7 +46,7 @@ export const LoveStory = ({ onSelectCategory }: LoveStoryProps) => {
       badge: t("loveStory.items.vietnamTour.badge"),
       title: t("loveStory.items.vietnamTour.title"),
       description: t("loveStory.items.vietnamTour.description"),
-      icon: "🎒",
+      icon: "🇻🇳",
       coverImage: "/assets/images/gallery/story-3.png",
     },
     {
@@ -54,15 +54,23 @@ export const LoveStory = ({ onSelectCategory }: LoveStoryProps) => {
       badge: t("loveStory.items.newZealand.badge"),
       title: t("loveStory.items.newZealand.title"),
       description: t("loveStory.items.newZealand.description"),
-      icon: "🏡",
+      icon: "🇳🇿",
       coverImage: "/assets/images/gallery/travel-5.jpg",
+    },
+     {
+      categoryKey: "propose",
+      badge: t("loveStory.items.propose.badge"),
+      title: t("loveStory.items.propose.title"),
+      description: t("loveStory.items.propose.description"),
+      icon: "💍",
+      coverImage: "/assets/images/gallery/propose-2.png",
     },
     {
       categoryKey: "prewedding",
       badge: t("loveStory.items.prewedding.badge"),
       title: t("loveStory.items.prewedding.title"),
       description: t("loveStory.items.prewedding.description"),
-      icon: "💍",
+      icon: "🏡",
       coverImage: "/assets/images/gallery/prewedding-7.jpg",
     },
   ];

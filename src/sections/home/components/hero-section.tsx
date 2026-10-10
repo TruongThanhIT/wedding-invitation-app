@@ -19,7 +19,7 @@ export const HeroSection = ({
   const { t } = useTranslation("home");
 
   return (
-    <div className="h-screen bg-gradient-to-br from-rose-100 via-pink-50 to-purple-100 relative overflow-hidden">
+    <div className="h-screen bg-gradient-to-br from-rose-100 via-pink-50 to-purple-100 relative overflow-hidden flex flex-col justify-between">
       {/* Background Decorations */}
       <div className="absolute inset-0">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-rose-200/30 rounded-full blur-3xl"></div>
@@ -28,26 +28,26 @@ export const HeroSection = ({
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col h-full px-6 pt-10 sm:pt-18 md:pt-20">
+      <div className="relative z-10 flex flex-col h-full px-4 sm:px-6 pt-10 sm:pt-18 md:pt-20 pb-4 justify-between">
         <div className="flex-1 flex items-center justify-center">
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="max-w-4xl mx-auto text-center w-full">
             {/* Main Heading */}
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: isLoaded ? 1 : 0, y: isLoaded ? 0 : 50 }}
               transition={{ duration: 1, delay: 0.2 }}
-              className="mb-6 sm:mb-8"
+              className="mb-4 sm:mb-8"
             >
-              <div className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 mb-4 font-medium">
+              <div className="text-xs sm:text-base md:text-lg lg:text-xl text-gray-600 mb-2 sm:mb-4 font-medium">
                 {t("hero.welcome")}
               </div>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-serif text-gray-800 mb-6 leading-tight">
-                Our
-                <span className="block bg-gradient-to-r from-rose-500 to-pink-600 bg-clip-text text-transparent">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-serif text-gray-800 mb-3 sm:mb-6 leading-tight">
+                Our{" "}
+                <span className="block sm:inline bg-gradient-to-r from-rose-500 to-pink-600 bg-clip-text text-transparent">
                   Wedding
                 </span>
               </h1>
-              <div className="w-32 h-px bg-gradient-to-r from-transparent via-rose-400 to-transparent mx-auto"></div>
+              <div className="w-24 sm:w-32 h-px bg-gradient-to-r from-transparent via-rose-400 to-transparent mx-auto"></div>
             </motion.div>
 
             {/* Couple Photos */}
@@ -57,22 +57,23 @@ export const HeroSection = ({
               transition={{ duration: 1, delay: 0.6 }}
               className="mb-6 sm:mb-8"
             >
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 md:gap-8 lg:gap-10 mb-4 sm:mb-6">
+              {/* Trên Mobile xếp 1 hàng ngang, Desktop giữ nguyên khoảnh cách trải rộng gốc */}
+              <div className="flex flex-row items-center justify-center gap-3 sm:gap-6 md:gap-8 lg:gap-10 mb-4 sm:mb-6">
                 {/* Bride */}
-                <div className="text-center flex-shrink-0 justify-items-center">
-                  <div className="relative w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 rounded-full overflow-hidden mb-3 sm:mb-4 shadow-lg border-4 border-white ring-2 ring-rose-200 bg-rose-100">
+                <div className="text-center flex flex-col items-center flex-shrink-0">
+                  <div className="relative w-16 h-16 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 rounded-full overflow-hidden mb-2 sm:mb-4 shadow-lg border-2 sm:border-4 border-white ring-2 ring-rose-200 bg-rose-100 mx-auto">
                     <Image
                       src={couple.bride.photo}
                       alt={couple.bride.name}
                       fill
-                      sizes="(max-width: 640px) 80px, (max-width: 768px) 96px, 128px"
+                      sizes="(max-width: 640px) 64px, (max-width: 768px) 96px, 128px"
                       className="object-cover object-top"
                       priority
                     />
                   </div>
-                  <div className="w-28 sm:w-32 md:w-40 lg:w-48 xl:w-56 mx-auto px-2">
+                  <div className="w-24 sm:w-32 md:w-40 lg:w-48 xl:w-56 mx-auto px-1 sm:px-2">
                     <h3
-                      className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-serif text-gray-800 break-words hyphens-auto leading-tight overflow-wrap-anywhere"
+                      className="text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl font-serif text-gray-800 break-words hyphens-auto leading-tight overflow-wrap-anywhere font-semibold sm:font-normal"
                       title={couple.bride.fullName}
                     >
                       {couple.bride.name}
@@ -80,43 +81,32 @@ export const HeroSection = ({
                   </div>
                 </div>
 
-                {/* Heart - Hidden on mobile, shown on larger screens */}
-                <div className="hidden sm:flex text-rose-500 animate-pulse flex-shrink-0 items-center justify-center">
+                {/* Heart Icon ở giữa */}
+                <div className="text-rose-500 animate-pulse flex-shrink-0 flex items-center justify-center -mt-3 sm:mt-0">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
-                    className="w-7 h-7 md:w-9 md:h-9 lg:w-11 lg:h-11 text-rose-500 fill-rose-400/20 stroke-rose-500 stroke-[1.5]"
-                  >
-                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-                  </svg>
-                </div>
-
-                {/* Heart for mobile - shown between bride and groom on mobile */}
-                <div className="sm:hidden flex justify-center text-rose-500 animate-pulse my-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    className="w-6 h-6 text-rose-500 fill-rose-400/20 stroke-rose-500 stroke-[1.5]"
+                    className="w-5 h-5 sm:w-7 sm:h-7 md:w-9 md:h-9 lg:w-11 lg:h-11 text-rose-500 fill-rose-400/20 stroke-rose-500 stroke-[1.5]"
                   >
                     <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
                   </svg>
                 </div>
 
                 {/* Groom */}
-                <div className="text-center flex-shrink-0 justify-items-center">
-                  <div className="relative w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 rounded-full overflow-hidden mb-3 sm:mb-4 shadow-lg border-4 border-white ring-2 ring-blue-200 bg-blue-100">
+                <div className="text-center flex flex-col items-center flex-shrink-0">
+                  <div className="relative w-16 h-16 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 rounded-full overflow-hidden mb-2 sm:mb-4 shadow-lg border-2 sm:border-4 border-white ring-2 ring-blue-200 bg-blue-100 mx-auto">
                     <Image
                       src={couple.groom.photo}
                       alt={couple.groom.name}
                       fill
-                      sizes="(max-width: 640px) 80px, (max-width: 768px) 96px, 128px"
+                      sizes="(max-width: 640px) 64px, (max-width: 768px) 96px, 128px"
                       className="object-cover object-top"
                       priority
                     />
                   </div>
-                  <div className="w-28 sm:w-32 md:w-40 lg:w-48 xl:w-56 mx-auto px-2">
+                  <div className="w-24 sm:w-32 md:w-40 lg:w-48 xl:w-56 mx-auto px-1 sm:px-2">
                     <h3
-                      className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-serif text-gray-800 break-words hyphens-auto leading-tight overflow-wrap-anywhere"
+                      className="text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl font-serif text-gray-800 break-words hyphens-auto leading-tight overflow-wrap-anywhere font-semibold sm:font-normal"
                       title={couple.groom.fullName}
                     >
                       {couple.groom.name}
@@ -131,13 +121,13 @@ export const HeroSection = ({
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: isLoaded ? 1 : 0, y: isLoaded ? 0 : 30 }}
               transition={{ duration: 1, delay: 1.2 }}
-              className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center"
+              className="flex flex-col sm:flex-row gap-2.5 sm:gap-4 justify-center max-w-xs sm:max-w-none mx-auto"
             >
               <motion.button
                 onClick={() => onScrollToSection("rsvp")}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-gradient-to-r from-rose-500 to-pink-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-sm sm:text-base md:text-lg shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
+                className="bg-gradient-to-r from-rose-500 to-pink-600 text-white px-6 sm:px-8 py-2.5 sm:py-4 rounded-full font-semibold text-xs sm:text-base md:text-lg shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
               >
                 {t("navigation.rsvp")}
               </motion.button>
@@ -145,7 +135,7 @@ export const HeroSection = ({
                 onClick={() => onScrollToSection("details")}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-white/80 backdrop-blur-sm text-gray-800 px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-sm sm:text-base md:text-lg shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 cursor-pointer"
+                className="bg-white/80 backdrop-blur-sm text-gray-800 px-6 sm:px-8 py-2.5 sm:py-4 rounded-full font-semibold text-xs sm:text-base md:text-lg shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 cursor-pointer"
               >
                 {t("hero.view-details")}
               </motion.button>
@@ -154,7 +144,7 @@ export const HeroSection = ({
         </div>
 
         {/* Scroll Indicator */}
-        <div className="flex justify-center pb-6 sm:pb-8">
+        <div className="flex justify-center pb-4 sm:pb-8">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: isLoaded ? 1 : 0 }}
@@ -167,10 +157,10 @@ export const HeroSection = ({
               className="text-gray-600 text-center cursor-pointer"
               onClick={() => onScrollToSection("couple")}
             >
-              <div className="text-xs mb-1 sm:mb-2">
+              <div className="text-[10px] sm:text-xs mb-1 sm:mb-2">
                 {t("hero.scroll-down")}
               </div>
-              <div className="text-lg sm:text-xl">⬇️</div>
+              <div className="text-base sm:text-xl">⬇️</div>
             </motion.div>
           </motion.div>
         </div>

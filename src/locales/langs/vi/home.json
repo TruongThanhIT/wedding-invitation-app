@@ -1,209 +1,228 @@
 {
   "letter": {
-    "guest": "Khách mời",
-    "dear": "Thân gửi",
-    "you-are-invited": "Trân trọng kính mời bạn đến dự lễ kết hôn của chúng tôi",
+    "guest": "Bạn",
+    "dear": "Thân gửi bạn,",
+    "you-are-invited": "Tụi mình thân mời bạn đến chung vui trong ngày cưới của tụi mình",
     "to": "đến",
-    "invitation-title": "Trân trọng kính mời bạn cùng chia vui trong ngày trọng đại của chúng tôi",
-    "invitation-quote": "Thế giới của anh/em đã hoàn toàn thay đổi từ khoảnh khắc chúng mình gặp nhau...",
-    "click-to-open-hover": "Nhấp vào đây để mở thiệp",
-    "click-to-open": "Nhấp vào thiệp để mở",
+    "invitation-title": "Cùng tụi mình chia sẻ niềm vui trong ngày đặc biệt này nhé!",
+    "invitation-quote": "Từ ngày gặp nhau, thế giới của tụi mình đã có thêm thật nhiều điều dịu dàng...",
+    "click-to-open-hover": "Chạm vào đây để mở thiệp nhé",
+    "click-to-open": "Chạm vào thiệp để mở nhé",
     "opening-the-invitation": "Đang mở thiệp..."
   },
   "closing-message": {
-    "title": " Rất Hân Hạnh Được Đón Tiếp Bạn",
-    "quote": "Sự hiện diện của bạn trong cuộc sống của chúng tôi là một phước lành, và được cùng bạn ăn mừng ngày đặc biệt này sẽ giúp niềm hạnh phúc thêm trọn vẹn. Cảm ơn bạn đã là một phần trong câu chuyện tình yêu của chúng tôi.",
-    "with-love": "Thương yêu,",
-    "hashtags": "#FiqriAndMio2025 #LoveWins #ForeverStartsNow",
-    "contact": "Bạn có thắc mắc? Liên hệ với chúng tôi qua zalo: +84 782 808 428 hoặc email: truongthanh.it95@gmail.com"
+    "title": "Rất vui khi được đón bạn",
+    "quote": "Có bạn cùng chung vui sẽ khiến ngày đặc biệt này của tụi mình thêm trọn vẹn. Cảm ơn bạn đã luôn là một phần ý nghĩa trong hành trình của tụi mình.",
+    "with-love": "Thân thương,",
+    "hashtags": "#LoveWins #ForeverStartsNow",
+    "contact": "Nếu bạn cần hỏi thêm điều gì, cứ nhắn tụi mình qua Zalo: +84 782 808 428 hoặc email: truongthanh.it95@gmail.com nhé!"
   },
   "hero": {
-    "welcome": "Chào Mừng Đến Với Lễ Kết Hôn Của Chúng Tôi",
-    "together": "Sóng Đôi Bên Nhau",
-    "scroll-down": "Cuộn Xuống",
-    "scroll-to-explore": "Cuộn xuống để khám phá câu chuyện tình yêu",
-    "view-details": "Xem Chi Tiết"
+    "welcome": "Chào mừng bạn đến với ngày vui của tụi mình",
+    "together": "Mình cùng về chung một nhà",
+    "scroll-down": "Kéo xuống",
+    "scroll-to-explore": "Kéo xuống để khám phá câu chuyện của tụi mình nhé",
+    "view-details": "Xem chi tiết"
   },
   "couple": {
-    "title": "Chú Rể & Cô Dâu",
-    "bride-description": "Một tâm hồn dịu dàng với trái tim đong đầy yêu thương và những giấc mơ về tương lai hạnh phúc.",
-    "groom-description": "Một người đồng hành ấm áp, luôn mang lại niềm vui và tiếng cười mỗi ngày.",
-    "our-story": "Câu Chuyện Tình Yêu",
-    "story-text": "Hành trình của chúng tôi bắt đầu từ một lời chào đơn sơ và đã đơm hoa kết trái thành câu chuyện tình yêu đẹp đẽ nhất. Chúng tôi rất hạnh phúc khi được chia sẻ ngày đặc biệt này cùng tất cả mọi người.",
-    "the-groom": "Chú Rể",
-    "the-bride": "Cô Dâu",
-    "love-quote": "Em/Anh là người duy nhất mà anh/em muốn cùng ngắm nhìn mỗi bình minh và hoàng hôn."
+    "title": "Cô dâu & chú rể",
+    "bride-description": "Một cô gái dịu dàng, luôn ấp ủ thật nhiều yêu thương và những ước mơ cho tương lai.",
+    "groom-description": "Một người đồng hành ấm áp, luôn mang đến tiếng cười và niềm vui trong những điều giản dị mỗi ngày.",
+    "our-story": "Câu chuyện của tụi mình",
+    "story-text": "Câu chuyện của tụi mình bắt đầu từ một lời chào rất đỗi bình thường, rồi dần trở thành hành trình đầy ắp yêu thương. Tụi mình thật vui khi có thể chia sẻ ngày đặc biệt này cùng mọi người.",
+    "the-groom": "Chú rể",
+    "the-bride": "Cô dâu",
+    "love-quote": "Người mình muốn cùng ngắm bình minh và hoàng hôn, hôm nay và cả những ngày sau này."
   },
   "details": {
-    "title": "Thông Tin Lễ Cưới",
-    "date": "Lưu Ngày Lễ Cưới",
+    "title": "Thông tin ngày cưới",
+    "date": "Lưu ngày cưới",
     "time": "Thời gian",
     "day": "Ngày",
     "month": "Tháng",
     "year": "Năm",
-    "countdown": "Đếm Nguồn Đến Ngày Cưới",
+    "countdown": "Đếm ngược đến ngày cưới",
     "hours": "Giờ",
     "minutes": "Phút",
     "seconds": "Giây",
-    "countdown-title": "Đếm Ngược Đến Hạnh Phúc Vĩnh Cửu",
-    "countdown-subtitle": "Mỗi khoảnh khắc trôi qua đều đưa chúng tôi đến gần hơn với ngày trọng đại",
-    "days-until": "ngày nữa là đến ngày chúng tôi về chung một nhà! 💕",
-    "hours-until": "giờ nữa là đến ngày chúng tôi về chung một nhà! 💕",
-    "minutes-until": "phút nữa là đến ngày chúng tôi về chung một nhà! 💕",
+    "countdown-title": "Đếm ngược đến ngày tụi mình về chung một nhà",
+    "countdown-subtitle": "Mỗi khoảnh khắc trôi qua lại đưa tụi mình gần hơn đến ngày đặc biệt ấy",
+    "days-until": "ngày nữa là tụi mình về chung một nhà rồi! 💕",
+    "hours-until": "giờ nữa là tụi mình về chung một nhà rồi! 💕",
+    "minutes-until": "phút nữa là tụi mình về chung một nhà rồi! 💕",
     "moment-arrived": "Khoảnh khắc trọng đại đã đến! 💕",
-    "join-us-text": "Hãy đến và cùng chứng kiến khoảnh khắc chúng tôi trao lời thề nguyện và bắt đầu hành trình mới",
-    "mark-calendar": "Đánh dấu lịch ngay nhé! 📅",
-    "add-to-calendar": "Thêm Vào Lịch",
-    "message": "Đừng bỏ lỡ ngày vui của chúng tôi! Thêm sự kiện này vào lịch để nhận nhắc nhở nhé.",
+    "join-us-text": "Mong bạn đến chung vui và chứng kiến khoảnh khắc tụi mình bắt đầu hành trình mới nhé",
+    "mark-calendar": "Lưu lịch lại nhé! 📅",
+    "add-to-calendar": "Thêm vào lịch",
+    "message": "Đừng quên ngày vui của tụi mình nha! Bạn có thể thêm sự kiện vào lịch để tiện theo dõi nhé.",
     "ceremony": "Lễ Vu Quy",
-    "get-directions": "Chỉ Đường",
+    "get-directions": "Xem đường đi",
     "reception": "Tiệc Cưới",
     "please-note": "Lưu Ý",
     "dress-code": "Trang Phục (Dress Code)",
-    "formal-attire": "Tone Hồng, Trắng hoặc Kem",
+    "formal-attire": "Trang phục tông hồng, trắng hoặc kem",
     "parking": "Chỗ Đỗ Xe",
-    "valet-available": "Có bãi đậu xe máy / ô tô tại địa điểm",
+    "valet-available": "Có chỗ đỗ xe máy và ô tô tại địa điểm",
     "contact": "Liên Hệ (Zalo)",
-    "our-wedding-day": "Ngày Cưới Của Chúng Tôi",
-    "join-us": "Hãy đến chia vui cùng chúng tôi!"
+    "our-wedding-day": "Ngày cưới của tụi mình",
+    "join-us": "Đến chung vui cùng tụi mình nhé!"
   },
   "venue": {
-    "title": "Địa Điểm Tổ Chức",
+    "title": "Địa điểm tổ chức",
     "ceremony": "Lễ Vu Quy",
     "reception": "Tiệc Cưới",
-    "get-directions": "Chỉ Đường",
-    "schedule-title": "Lịch Trình Sự Kiện",
+    "get-directions": "Xem đường đi",
+    "schedule-title": "Lịch trình ngày cưới",
     "preparation": "Chuẩn bị",
     "ceremony-time": "LỄ VU QUY",
     "reception-time": "TIỆC CƯỚI",
     "party": "Tiệc Sau Cưới (After Party)",
     "location-title": "Địa Điểm & Vị Trí",
-    "location-subtitle": "Cùng đến chung vui tại những địa điểm tuyệt đẹp này trong ngày trọng đại của chúng tôi",
-    "ceremony-details": "Lưu Ý Nhỏ Cho Khách Mời",
-    "reception-details": "Thông Tin Tiệc Cưới",
-    "arrive-early": "Nghi lễ Gia tiên được cử hành ấm cúng cùng gia đình & bà con thân thiết",
-    "unplugged": "Kính mời Quý khách chung vui tại Tiệc Cưới Nhà Hàng",
-    "parking": "Khách mời tham dự lễ tại Tư gia sẽ có thông báo riêng từ Dâu Rể nha.",
+    "location-subtitle": "Mời bạn đến chung vui cùng tụi mình tại các địa điểm dưới đây nhé",
+    "ceremony-details": "Một vài lưu ý nhỏ gửi bạn",
+    "reception-details": "Thông tin tiệc cưới",
+    "arrive-early": "Nghi lễ gia tiên sẽ được tổ chức ấm cúng cùng gia đình và người thân",
+    "unplugged": "Tụi mình rất mong được đón bạn tại tiệc cưới ở nhà hàng",
+    "parking": "Bạn tham dự lễ tại tư gia vui lòng chờ thông tin riêng từ Dâu Rể nha!",
     "welcome-drink": "11:00 AM • Đón khách",
     "open-bar": "11:30 AM • Khai tiệc",
     "dancing": "Bãi đỗ xe: Có sẵn chỗ đỗ xe máy & ô tô trong khuôn viên.",
     "view-map": "Xem Trên Bản Đồ"
   },
   "rsvp": {
-    "title": "Xác Nhận Tham Dự (RSVP)",
-    "subtitle": "Giúp chúng tôi chuẩn bị đón tiếp chu đáo nhất",
-    "name": "Họ và Tên",
-    "email": "Địa chỉ Email",
-    "attendance": "Bạn sẽ đến dự chứ?",
-    "yes": "Có, tôi sẽ đến!",
-    "no": "Rất tiếc, tôi không thể đến",
-    "guests": "Số Lượng Khách Đi Cùng",
-    "message": "Lời Nhắn Đặc Biệt (Không bắt buộc)",
-    "submit": "Gửi Xác Nhận",
-    "thank-you": "Cảm ơn bạn đã xác nhận tham dự!",
-    "confirm-attendance": "Xác Nhận Sự Có Mặt Của Bạn",
-    "full-name": "Họ và Tên",
-    "email-address": "Địa chỉ Email",
-    "will-attend": "Bạn sẽ đến dự chứ?",
-    "please-select": "Vui lòng chọn",
-    "yes-there": "Có, tôi sẽ đến! 🎉",
-    "no-cant": "Rất tiếc, tôi không thể đến 😢",
-    "number-guests": "Số Lượng Khách Đi Cùng",
-    "guest-count": "Khách",
-    "guest-1": "1 người (Chỉ mình tôi)",
+    "title": "Xác nhận tham dự",
+    "subtitle": "Để tụi mình chuẩn bị chu đáo hơn, bạn xác nhận tham dự giúp tụi mình nhé",
+    "name": "Họ và tên",
+    "email": "Địa chỉ email",
+    "attendance": "Bạn sẽ đến chung vui cùng tụi mình chứ?",
+    "yes": "Có, mình sẽ đến!",
+    "no": "Tiếc quá, mình không thể tham dự",
+    "guests": "Số người đi cùng",
+    "message": "Lời nhắn gửi tụi mình (không bắt buộc)",
+    "submit": "Gửi xác nhận",
+    "thank-you": "Cảm ơn bạn đã phản hồi nha!",
+    "confirm-attendance": "Xác nhận tham dự",
+    "full-name": "Họ và tên",
+    "email-address": "Địa chỉ email",
+    "will-attend": "Bạn sẽ đến chung vui cùng tụi mình chứ?",
+    "please-select": "Bạn chọn giúp tụi mình nhé",
+    "yes-there": "Có, mình sẽ đến! 🎉",
+    "no-cant": "Tiếc quá, mình không thể tham dự 😢",
+    "number-guests": "Số người đi cùng",
+    "guest-count": "người",
+    "guest-1": "1 người (mình)",
     "guests-count": "{{count}} người",
-    "dietary-restrictions": "Yêu Cầu Món Ăn / Dị Ứng",
-    "dietary-placeholder": "Bạn có bị dị ứng hay cần thực đơn ăn kiêng/chay không?",
-    "message-couple": "Lời Chúc Đến Dâu Rể",
-    "message-placeholder": "Gửi những lời chúc tốt đẹp nhất đến cô dâu và chú rể...",
-    "send-rsvp": "Gửi Xác Nhận 💕",
-    "thank-you-received": "Chúng tôi đã nhận được thông tin xác nhận. Rất mong chờ được đón tiếp bạn!",
-    "deadline": "Hạn Chót Xác Nhận",
-    "deadline-date": "22 Tháng 12, 2026",
-    "deadline-help": "Vui lòng phản hồi trước ngày này để giúp chúng tôi chuẩn bị tiệc chu đáo nhất.",
-    "questions": "Bạn Có Thắc Mắc?",
-    "questions-help": "Chúng tôi luôn sẵn sàng hỗ trợ!",
-    "gift-registry": "Mừng Cưới / Mừng Tuổi",
-    "presence-present": "Sự hiện diện của bạn là món quà ý nghĩa nhất đối với chúng tôi",
-    "registry-text": "Nếu bạn muốn gửi quà mừng đến vợ chồng mới cưới, vui lòng tham khảo:"
+    "dietary-restrictions": "Lưu ý về món ăn / dị ứng",
+    "dietary-placeholder": "Bạn có dị ứng thực phẩm hoặc cần món chay / chế độ ăn đặc biệt nào không?",
+    "message-couple": "Lời chúc gửi Dâu Rể",
+    "message-placeholder": "Gửi lời chúc đến tụi mình nhé...",
+    "send-rsvp": "Gửi xác nhận 💕",
+    "thank-you-received": "Tụi mình nhận được xác nhận của bạn rồi. Mong sớm được gặp bạn trong ngày vui nhé!",
+    "deadline": "Hạn xác nhận tham dự",
+    "deadline-date": "20 Tháng 12, 2026",
+    "deadline-help": "Mọi người xác nhận giúp tụi mình trước ngày này nha, để tụi mình chuẩn bị thật chu đáo. Cảm ơn mọi người nhiều lắm!",
+    "questions": "Bạn cần hỏi gì không?",
+    "questions-help": "Có gì cần hỏi, bạn cứ liên hệ tụi mình nhé!",
+    "gift-registry": "Mừng cưới",
+    "presence-present": "Có bạn đến chung vui đã là món quà quý giá nhất với tụi mình rồi",
+    "registry-text": "Nếu bạn muốn gửi lời chúc phúc kèm chút quà mừng cho tụi mình, bạn có thể tham khảo thông tin bên dưới nhé:",
+    "full-name-placeholder": "Nhập họ và tên",
+    "email-placeholder": "email@gmail.com",
+    "submitting": "Đang gửi...",
+    "gift-registry-title": "Hộp Chúc Phúc Online 💌",
+    "presence-is-present": "Được cùng mọi người chia sẻ niềm vui này là tụi mình hạnh phúc lắm rồi! ❤️",
+    "gift-message": "Nếu bạn muốn gửi thêm chút lộc đến Dâu Rể, bạn có thể quét mã QR bên dưới nha. Hoàn toàn tùy tâm thôi, bạn đừng ngại nhé! 🥰 Cảm ơn mọi người vì đã gửi thật nhiều yêu thương đến tụi mình! 💗",
+    "bank-label": "Ngân hàng:",
+    "bank-name": "Techcombank",
+    "bank-account-label": "Số tài khoản:",
+    "bank-account-number": "9565 2207 95",
+    "bank-holder-label": "Chủ tài khoản:",
+    "bank-holder-name": "Trương Huỳnh Thụy Thái Thanh",
+    "bank-note": "Nội dung: Mung cuoi Thanh va Zhe - [Tên bạn]",
+    "error-alert": "Có chút trục trặc khi gửi xác nhận. Bạn thử lại giúp tụi mình hoặc nhắn trực tiếp cho Dâu Rể nha!"
   },
   "navigation": {
-    "home": "Trang Chủ",
+    "home": "Trang chủ",
     "couple": "Cô Dâu & Chú Rể",
     "details": "Chi Tiết",
     "venue": "Địa Điểm",
-    "gallery": "Album Ảnh",
+    "gallery": "Album ảnh",
     "rsvp": "Xác Nhận Tham Dự",
-    "love-story": "Câu Chuyện Tình Yêu"
+    "love-story": "Câu chuyện của tụi mình"
   },
   "schedule": {
     "title": "Chương Trình Lễ Cưới",
-    "guest-arrival": "Đón Khách & TỔng Kết Chỗ Ngồi",
-    "welcome-drinks": "Phục vụ nước uống chào mừng",
+    "guest-arrival": "Đón khách và ổn định chỗ ngồi",
+    "welcome-drinks": "Mời khách dùng nước chào mừng",
     "wedding-ceremony": "Lễ Vu Quy",
-    "vows": "Nghi thức trao lời thề nguyện",
-    "photography": "Chụp Ảnh Kỷ Niệm",
-    "welcome-drink": "Đồ uống chào mừng dành cho khách",
-    "reception-begins": "Khai Tiệc Cưới",
-    "dinner-celebration": "Dùng tiệc & Ăn mừng",
-    "first-dance": "Điệu Nhảy Đầu Tiên",
-    "special-moment": "Khoảnh khắc đặc biệt của cô dâu & chú rể",
-    "dancing-party": "Khiêu Vũ & Tiệc Tùng",
-    "celebration-continues": "Cùng tiếp tục cuộc vui!",
-    "send-off": "Tiễn Khách",
-    "sparkler-farewell": "Tiễn dâu rể cùng pháo hoa cầm tay"
+    "vows": "Nghi thức trao lời nguyện ước",
+    "photography": "Chụp ảnh kỷ niệm",
+    "welcome-drink": "Nước uống chào mừng",
+    "reception-begins": "Khai tiệc cưới",
+    "dinner-celebration": "Dùng tiệc và chung vui",
+    "first-dance": "Điệu nhảy đầu tiên",
+    "special-moment": "Khoảnh khắc đặc biệt của Dâu Rể",
+    "dancing-party": "Âm nhạc và tiệc vui",
+    "celebration-continues": "Cùng nhau tiếp tục cuộc vui nhé!",
+    "send-off": "Lời chào tạm biệt",
+    "sparkler-farewell": "Cùng tiễn Dâu Rể bằng pháo hoa cầm tay"
   },
   "music": {
-    "wedding-music": "Nhạc Nền Lễ Cưới",
-    "click-to-start": "Nhấp nút nhạc để bật!",
+    "wedding-music": "Nhạc nền ngày cưới",
+    "click-to-start": "Chạm vào nút nhạc để bật nhé!",
     "playing": "Đang phát",
     "paused": "Đã tạm dừng",
-    "enable-music": "Bật Nhạc Lễ Cưới",
-    "browser-blocked": "Trình duyệt đã tự động chặn phát nhạc. Vui lòng nhấp nút bên dưới để bật nhạc nền lễ cưới.",
-    "how-to-enable": "Cách Cho Phép Tự Động Phát Nhạc:",
+    "enable-music": "Bật nhạc ngày cưới",
+    "browser-blocked": "Trình duyệt đang chặn tự động phát nhạc. Bạn chạm vào nút bên dưới để bật nhạc nền nhé.",
+    "how-to-enable": "Cách bật tính năng tự động phát nhạc:",
     "chrome-edge": "Chrome/Edge: Nhấp biểu tượng 🔒 trên thanh địa chỉ → Âm thanh (Sound) → Cho phép (Allow)",
     "firefox": "Firefox: Nhấp biểu tượng 🔊 trên thanh địa chỉ → Cho phép âm thanh (Allow audio)",
     "safari": "Safari: Cài đặt → Trang web → Tự động phát → Cho phép tất cả",
     "play-music": "🎵 Phát Nhạc",
     "later": "Để sau",
-    "auto-note": "Nhạc sẽ tự động phát sau khi bạn bật tính năng này"
+    "auto-note": "Sau khi bật tính năng này, nhạc sẽ tự động phát nhé"
   },
   "loveStory": {
-    "title": "Câu Chuyện Tình Yêu",
-    "subtitle": "Hành trình từ những dòng code, những chuyến bay cho đến bến đỗ bình yên tại New Zealand.",
-    "viewPhotos": "Xem ảnh mốc này →",
-    "viewAlbum": "Xem album kỷ niệm",
-    "viewAllPhotos": "Xem Toàn Bộ Album Ảnh",
+    "title": "Câu chuyện của tụi mình",
+    "subtitle": "Từ những dòng code, những chuyến bay xa đến nơi bình yên mà tụi mình gọi là nhà tại New Zealand.",
+    "viewPhotos": "Xem ảnh kỷ niệm →",
+    "viewAlbum": "Xem album ảnh kỷ niệm",
+    "viewAllPhotos": "Xem toàn bộ album ảnh",
     "items": {
       "linkedin": {
         "badge": "Lời Chào LinkedIn",
         "title": "Mối Duyên Kì Lạ",
-        "description": "Nhờ người anh đồng nghiệp cũ kết nối, hai đứa gặp nhau qua... LinkedIn."
+        "description": "Nhờ một anh đồng nghiệp cũ kết nối, tụi mình quen nhau qua... LinkedIn."
       },
       "firstMeet": {
         "badge": "Chuyến Bay Đầu Tiên",
         "title": "Cuộc Gặp Trực Tiếp & Lời Tỏ Tình",
-        "description": "Sau 2 tháng trò chuyện hợp cạ, anh quyết định bay về Việt Nam gặp mình."
+        "description": "Sau hai tháng trò chuyện rất hợp cạ, anh quyết định bay về Việt Nam để gặp mình."
       },
       "chinaTour": {
         "badge": "Chuyến Đi Trung Quốc",
-        "title": "Sinh Nhật Đáng Nhớ & Du Lịch Quảng Châu",
-        "description": "Mình sang thăm anh, đón sinh nhật tại Disneyland Thượng Hải và cùng nhau khám phá Quảng Châu."
+        "title": "Sinh Nhật Đáng Nhớ",
+        "description": "Mình sang thăm anh, cùng đón sinh nhật tại Disneyland Thượng Hải rồi du lịch một số nơi ở Trung Quốc cùng nhau."
       },
       "vietnamTour": {
-        "badge": "Hành Trình Xuyên Việt",
-        "title": "Rong Buổi Cùng Nhau",
-        "description": "Hai đứa cùng nhau xách balo vi vu qua Hà Nội, Đà Nẵng và Huế."
+        "badge": "Chuyến rong ruổi xuyên Việt",
+        "title": "Rong ruổi cùng nhau",
+        "description": "Tụi mình cùng xách ba lô rong ruổi khắp Việt Nam."
       },
       "newZealand": {
-        "badge": "Bến Đỗ New Zealand",
-        "title": "Bank family",
-        "description": "Cùng dừng chân tại New Zealand để xây dựng sự nghiệp: Anh làm BNZ, mình làm Westpac."
+        "badge": "Bến đỗ New Zealand",
+        "title": "Cùng xây dựng tổ ấm",
+        "description": "Tụi mình cùng chọn New Zealand làm nơi xây dựng sự nghiệp và ổn định tương lai: anh làm ở BNZ, còn mình ở Westpac."
+      },
+      "propose": {
+        "badge": "Cầu Hôn",
+        "title": "Khoảnh Khắc Đặc Biệt",
+        "description": "Ba tiếng đi bộ, hai cung đường leo núi, một lời ngỏ ý và một cái gật đầu. ❤️"
       },
       "prewedding": {
         "badge": "Chung Đôi",
-        "title": "Bộ Ảnh Pre-Wedding",
-        "description": "Những khung hình đong đầy hạnh phúc, ghi dấu ngày hai đứa chính thức về chung một nhà."
+        "title": "Album ảnh cưới",
+        "description": "Những khung hình lưu giữ niềm vui và tình yêu trên hành trình về chung một nhà của tụi mình."
       }
     }
   },
@@ -211,44 +230,137 @@
     "categories": {
       "all": "Tất Cả",
       "prewedding": "Pre-wedding",
-      "linkedin": "Mới Quen",
+      "propose": "Cầu Hôn",
+      "linkedin": "Lời chào LinkedIn",
       "firstMeet": "Lần Đầu Gặp",
       "chinaTour": "Trung Quốc",
-      "vietnamTour": "Xuyên Việt",
+      "vietnamTour": "Việt Nam",
       "newZealand": "New Zealand"
     },
     "title": "Bộ Ảnh Kỷ Niệm",
     "journeyTitle": "Hành Trình Yêu Thương",
-    "journeySubtitle": "Những khoảnh khắc đẹp nhất của chúng mình",
+    "journeySubtitle": "Những khoảnh khắc đáng nhớ của tụi mình",
     "viewFull": "Xem Tất Cả Ảnh",
     "fullAlbumTitle": "Bộ Sưu Tập Kỷ Niệm",
-    "fullAlbumSubtitle": "Tổng hợp những khoảnh khắc đáng nhớ",
-    "clickToZoom": "Click để phóng to",
+    "fullAlbumSubtitle": "Gom góp những khoảnh khắc thật đáng nhớ",
+    "clickToZoom": "Chạm để xem ảnh lớn hơn",
     "items": {
-      "pre1": { "title": "Khởi Đầu Hành Trình", "desc": "Nhẹ nhàng bước bên nhau trong nắng mai" },
-      "pre2": { "title": "Lời Hứa Hạnh Phúc", "desc": "Khoảnh khắc trao nhau ánh nhìn đong đầy yêu thương" },
-      "pre3": { "title": "Bên Nhau Bình Yên", "desc": "Nắm tay qua từng góc phố thân quen" },
-      "pre4": { "title": "Dưới Ánh Nắng Chiều", "desc": "Ghi lại những khung hình lãng mạn" },
-      "pre5": { "title": "Nụ Cười Rạng Rỡ", "desc": "Niềm hạnh phúc đong đầy trong ánh mắt" },
-      "pre6": { "title": "Góc Phố Kỷ Niệm", "desc": "Sự gắn kết tự nhiên và dịu dàng" },
-      "pre7": { "title": "Thương Yêu Đong Đầy", "desc": "Cùng nhìn về một hướng tương lai" },
-      "pre8": { "title": "Ánh Nắng Ban Mai", "desc": "Rạng rỡ trong khoảnh khắc ngọt ngào" },
-      "pre9": { "title": "Chút Tình Thơ Mộng", "desc": "Ghi dấu những phút giây dịu dàng bên nhau" },
-      "pre10": { "title": "Vòng Tay Bình Yên", "desc": "Ấm áp và trọn vẹn từng khoảnh khắc" },
-      "pre11": { "title": "Nụ Cười Hạnh Phúc", "desc": "Ánh mắt trao nhau thay lời muốn nói" },
-      "pre12": { "title": "Hướng Về Tương Lai", "desc": "Cùng nhau viết tiếp câu chuyện tình yêu" },
-      "pre13": { "title": "Sắc Hoa Hạnh Phúc", "desc": "Điểm nhấn dịu dàng cho ngày chung đôi" },
-       "pre14": { "title": "Khoảnh Khắc Đáng Nhớ", "desc": "Một khoảnh khắc đẹp đẽ trong hành trình yêu thương" },
-      "mem1": { "title": "Sinh nhật đặc biệt", "desc": "Lần đầu tổ chức sinh nhật cho Mia tại Disney Land Thượng Hải" },
-      "mem2": { "title": "Dấu Chân Kỷ Niệm", "desc": "Chuyến du lịch đầu tiên cùng nhau tại Quảng Châu" },
-      "mem3": { "title": "May Mắn Săn Cực Quang", "desc": "Lần đầu tiên săn cực quang tại New Zealand" },
-      "mem4": { "title": "Chơi Tuyết Lần Đầu", "desc": "Lần đầu cùng nhau chơi tuyết tại Tekapo, New Zealand" },
-      "mem5": { "title": "Mối Duyên Kì Lạ", "desc": "Nhờ người anh đồng nghiệp cũ kết nối, hai đứa gặp nhau qua... LinkedIn." },
-      "mem6": { "title": "Hành trình khám phá", "desc": "Cùng nhau khám phá Thượng Hải và thưởng thức những món ăn tại Trung Quốc" },
-      "firstMeet": { "title": "Những ngày đầu", "desc": "Những khoảnh khắc đáng nhớ khi hai đứa lần đầu gặp nhau" },
-      "inLove": { "title": "Chính thức hẹn hò", "desc": "Chính thức công khai hẹn hò" },
-      "vietnamTour": { "title": "Hành trình xuyên Việt", "desc": "Cùng nhau rong ruổi qua Hà Nội, Đà Nẵng và Huế" },
-      "newZealand": { "title": "Bến đỗ New Zealand", "desc": "Cùng dừng chân tại New Zealand để xây dựng sự nghiệp: Anh làm BNZ, mình làm Westpac." }
+      "pre1": {
+        "title": "Khởi Đầu Hành Trình",
+        "desc": "Tụi mình nhẹ bước bên nhau dưới nắng mai"
+      },
+      "pre2": {
+        "title": "Lời Hứa Hạnh Phúc",
+        "desc": "Ánh nhìn dịu dàng trao nhau đầy yêu thương"
+      },
+      "pre3": {
+        "title": "Bên Nhau Bình Yên",
+        "desc": "Cùng nắm tay qua những góc phố thân quen"
+      },
+      "pre4": {
+        "title": "Dưới Ánh Nắng Chiều",
+        "desc": "Lưu lại những khung hình thật lãng mạn"
+      },
+      "pre5": {
+        "title": "Nụ Cười Rạng Rỡ",
+        "desc": "Niềm vui hiện lên trong từng ánh mắt"
+      },
+      "pre6": {
+        "title": "Góc Phố Kỷ Niệm",
+        "desc": "Sự gắn kết nhẹ nhàng, tự nhiên"
+      },
+      "pre7": {
+        "title": "Thương Yêu Đong Đầy",
+        "desc": "Cùng hướng về tương lai phía trước"
+      },
+      "pre8": {
+        "title": "Ánh Nắng Ban Mai",
+        "desc": "Rạng rỡ trong khoảnh khắc ngọt ngào bên nhau"
+      },
+      "pre9": {
+        "title": "Chút Tình Thơ Mộng",
+        "desc": "Lưu lại những phút giây dịu dàng bên nhau"
+      },
+      "pre10": {
+        "title": "Vòng Tay Bình Yên",
+        "desc": "Mỗi khoảnh khắc bên nhau đều thật ấm áp"
+      },
+      "pre11": {
+        "title": "Nụ Cười Hạnh Phúc",
+        "desc": "Ánh mắt trao nhau thay lời muốn nói"
+      },
+      "pre12": {
+        "title": "Hướng Về Tương Lai",
+        "desc": "Cùng nhau viết tiếp câu chuyện của tụi mình"
+      },
+      "pre13": {
+        "title": "Sắc Hoa Hạnh Phúc",
+        "desc": "Một nét dịu dàng trong ngày chung đôi"
+      },
+      "pre14": {
+        "title": "Khoảnh Khắc Đáng Nhớ",
+        "desc": "Một kỷ niệm đẹp trên hành trình yêu thương"
+      },
+      "mem1": {
+        "title": "Sinh nhật đặc biệt",
+        "desc": "Lần đầu cùng tổ chức sinh nhật cho Thanh tại Disneyland Thượng Hải"
+      },
+      "mem2": {
+        "title": "Dấu Chân Kỷ Niệm",
+        "desc": "Chuyến đi đầu tiên của tụi mình tại Quảng Châu"
+      },
+      "mem3": {
+        "title": "May Mắn Săn Cực Quang",
+        "desc": "Lần đầu tụi mình cùng săn cực quang ở New Zealand"
+      },
+      "mem4": {
+        "title": "Chơi Tuyết Lần Đầu",
+        "desc": "Lần đầu cùng nhau nghịch tuyết ở Tekapo, New Zealand"
+      },
+      "mem5": {
+        "title": "Mối Duyên Kì Lạ",
+        "desc": "Nhờ một anh đồng nghiệp cũ kết nối, tụi mình quen nhau qua... LinkedIn."
+      },
+      "mem6": {
+        "title": "Hành trình khám phá",
+        "desc": "Cùng khám phá Thượng Hải và thưởng thức những món ngon Trung Quốc"
+      },
+      "firstMeet": {
+        "title": "Những ngày đầu",
+        "desc": "Những kỷ niệm đầu tiên khi tụi mình gặp nhau ngoài đời"
+      },
+      "inLove": {
+        "title": "Chính thức hẹn hò",
+        "desc": "Ngày tụi mình chính thức hẹn hò"
+      },
+      "vietnamTour1": {
+        "title": "Hành trình xuyên Việt",
+        "desc": "Cùng nhau rong ruổi khắp Hà Nội"
+      },
+      "vietnamTour2": {
+        "title": "Hành trình xuyên Việt",
+        "desc": "Trải nghiệm chèo thuyền ở Tràng An"
+      },
+       "vietnamTour3": {
+        "title": "Hành trình xuyên Việt",
+        "desc": "Check-in tại cầu tình yêu ở Đà Nẵng"
+      },
+      "newZealand": {
+        "title": "Bến đỗ New Zealand",
+        "desc": "Tụi mình cùng chọn New Zealand làm nơi xây dựng sự nghiệp: anh làm ở BNZ, còn mình ở Westpac."
+      },
+      "propose1": {
+        "title": "Khoảnh khắc cầu hôn",
+        "desc": "Yes I do! ❤️"
+      },
+       "propose2": {
+        "title": "Khoảnh khắc cầu hôn",
+        "desc": "Một bức ảnh không hề khoe nhẵn nha ^^"
+      },
+      "propose3": {
+        "title": "Khoảnh khắc cầu hôn",
+        "desc": "Định chụp tấm ảnh nghiêm túc nhưng cứ hài hài thế nào ý"
+      }
     }
   }
 }

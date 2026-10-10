@@ -70,7 +70,7 @@ export const ClosingMessage = ({ bride, groom }: ClosingMessageProps) => {
         </motion.div>
 
         {/* Footer */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: inView ? 1 : 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
@@ -79,7 +79,7 @@ export const ClosingMessage = ({ bride, groom }: ClosingMessageProps) => {
           <p className="text-xs sm:text-sm text-gray-500">
             Questions? Contact us at truongthanh.it95@gmail.com
           </p>
-        </motion.div>
+        </motion.div> */}
       </div>
     </div>
   );
