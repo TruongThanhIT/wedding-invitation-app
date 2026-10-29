@@ -6,9 +6,7 @@ import { LetterAnimation } from "@/components";
 import {
   HeroSection,
   CoupleIntroduction,
-  WeddingDetailsCard,
   CountdownTimer,
-  VenueInformation,
   RSVP,
   GalleryPreview,
   ClosingMessage,
@@ -16,7 +14,7 @@ import {
   NavigationFAB,
   MusicPlayer,
   ScrollProgressIndicator,
-  LoveStory,
+  WeddingEventSection,
 } from "../components";
 import { NAVIGATION_SECTIONS, WEDDING_CONFIG } from "@/constants";
 
@@ -92,18 +90,12 @@ export default function HomeView() {
           isVisible={isLoaded}
         />
       </section>
-      {/* Wedding Details */}
-      <section id="details" className="relative">
-        <WeddingDetailsCard
-          date={WEDDING_CONFIG.date}
-          venue={WEDDING_CONFIG.venue}
-        />
-      </section>
 
-      {/* Venue Information */}
-      <section id="venue" className="relative">
-        <VenueInformation venue={WEDDING_CONFIG.venue} />
-      </section>
+      // Date & Venue Section
+      <WeddingEventSection
+        date={WEDDING_CONFIG.date} 
+        venue={WEDDING_CONFIG.venue}
+      />
 
       {/* RSVP Section */}
       <section id="rsvp" className="relative">
@@ -111,9 +103,9 @@ export default function HomeView() {
       </section>
 
       {/* 2. CÂU CHUYỆN TÌNH YÊU (LOVE STORY) - ĐẶT TRƯỚC GALLERY */}
-      <section id="love-story" className="relative">
+      {/* <section id="love-story" className="relative">
         <LoveStory onSelectCategory={(cat) => setActiveCategory(cat as any)} />
-      </section>
+      </section> */}
 
       {/* 3. BỘ ẢNH KỶ NIỆM (GALLERY PREVIEW) - NHẬN STATE DỰA TRÊN TIMELINE CLICK */}
       <section id="gallery" className="relative scroll-mt-20">
@@ -129,7 +121,7 @@ export default function HomeView() {
           bride={WEDDING_CONFIG.bride.fullName}
           groom={WEDDING_CONFIG.groom.fullName}
         />
-         <CountdownTimer targetDate={WEDDING_CONFIG.date} />
+        <CountdownTimer targetDate={WEDDING_CONFIG.date} />
       </section>
 
       {/* Music Player */}

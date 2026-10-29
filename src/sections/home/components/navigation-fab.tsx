@@ -11,9 +11,9 @@ const sections = [
   "hero",
   "couple",
   "details",
-  "venue",
+  // "venue",
   "rsvp",
-  "love-story",
+  // "love-story",
   "gallery",
   "closing",
 ];

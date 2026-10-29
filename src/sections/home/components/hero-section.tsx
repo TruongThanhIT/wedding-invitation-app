@@ -19,15 +19,44 @@ export const HeroSection = ({
   const { t } = useTranslation("home");
 
   return (
-    <div className="h-screen bg-gradient-to-br from-rose-100 via-pink-50 to-purple-100 relative overflow-hidden flex flex-col justify-between">
-      {/* Background Decorations */}
-      <div className="absolute inset-0">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-rose-200/30 rounded-full blur-3xl"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-purple-200/30 rounded-full blur-3xl"></div>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-pink-200/20 rounded-full blur-3xl"></div>
+    <div className="h-screen relative overflow-hidden flex flex-col justify-between">
+      {/* ==========================================
+          1. GIAO DIỆN DÀNH RIÊNG CHO MOBILE (< 640px)
+         ========================================== */}
+      <div className="absolute inset-0 z-0 block sm:hidden">
+        <Image
+          src="/assets/images/bg-sea.jpg"
+          alt="Wedding Background Mobile"
+          fill
+          priority
+          quality={90}
+          sizes="100vw"
+          // Tinh chỉnh riêng cho mobile để căn trúng phần dâu rể
+          className="object-cover object-[65%_center]"
+        />
+        {/* Lớp phủ mờ giúp chữ đọc rõ hơn trên mobile */}
+        <div className="absolute inset-0 bg-black/40 backdrop-blur-[1px]" />
       </div>
 
-      {/* Content */}
+      {/* ==========================================
+          2. GIAO DIỆN DÀNH RIÊNG CHO DESKTOP (>= 640px)
+         ========================================== */}
+      <div className="absolute inset-0 z-0 hidden sm:block">
+        <Image
+          src="/assets/images/bg-sea.jpg"
+          alt="Wedding Background Desktop"
+          fill
+          priority
+          quality={90}
+          sizes="100vw"
+          className="object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-black/25 backdrop-blur-[1px]" />
+      </div>
+
+      {/* ==========================================
+          NỘI DUNG CHUNG CHO CẢ 2 GIAO DIỆN
+         ========================================== */}
       <div className="relative z-10 flex flex-col h-full px-4 sm:px-6 pt-10 sm:pt-18 md:pt-20 pb-4 justify-between">
         <div className="flex-1 flex items-center justify-center">
           <div className="max-w-4xl mx-auto text-center w-full">
@@ -38,26 +67,28 @@ export const HeroSection = ({
               transition={{ duration: 1, delay: 0.2 }}
               className="mb-4 sm:mb-8"
             >
-              <div className="text-xs sm:text-base md:text-lg lg:text-xl text-gray-600 mb-2 sm:mb-4 font-medium">
+              <div className="text-xs sm:text-base md:text-lg lg:text-xl text-white mb-2 sm:mb-4 font-medium drop-shadow-[0_1px_3px_rgba(0,0,0,0.8)]">
                 {t("hero.welcome")}
               </div>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-serif text-gray-800 mb-3 sm:mb-6 leading-tight">
-                Our{" "}
-                <span className="block sm:inline bg-gradient-to-r from-rose-500 to-pink-600 bg-clip-text text-transparent">
-                  Wedding
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-serif text-white mb-3 sm:mb-6 leading-tight drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]">
+                {t("hero.our")}
+                <span className="block sm:inline bg-gradient-to-r from-rose-300 via-pink-200 to-rose-300 bg-clip-text text-transparent font-bold">
+                  {t("hero.wedding")}
                 </span>
               </h1>
-              <div className="w-24 sm:w-32 h-px bg-gradient-to-r from-transparent via-rose-400 to-transparent mx-auto"></div>
+              <div className="w-24 sm:w-32 h-px bg-gradient-to-r from-transparent via-rose-300 to-transparent mx-auto"></div>
             </motion.div>
 
             {/* Couple Photos */}
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: isLoaded ? 1 : 0, scale: isLoaded ? 1 : 0.8 }}
+              animate={{
+                opacity: isLoaded ? 1 : 0,
+                scale: isLoaded ? 1 : 0.8,
+              }}
               transition={{ duration: 1, delay: 0.6 }}
               className="mb-6 sm:mb-8"
             >
-              {/* Trên Mobile xếp 1 hàng ngang, Desktop giữ nguyên khoảnh cách trải rộng gốc */}
               <div className="flex flex-row items-center justify-center gap-3 sm:gap-6 md:gap-8 lg:gap-10 mb-4 sm:mb-6">
                 {/* Bride */}
                 <div className="text-center flex flex-col items-center flex-shrink-0">
@@ -73,7 +104,7 @@ export const HeroSection = ({
                   </div>
                   <div className="w-24 sm:w-32 md:w-40 lg:w-48 xl:w-56 mx-auto px-1 sm:px-2">
                     <h3
-                      className="text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl font-serif text-gray-800 break-words hyphens-auto leading-tight overflow-wrap-anywhere font-semibold sm:font-normal"
+                      className="text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl font-serif text-white break-words hyphens-auto leading-tight overflow-wrap-anywhere font-bold drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]"
                       title={couple.bride.fullName}
                     >
                       {couple.bride.name}
@@ -81,12 +112,12 @@ export const HeroSection = ({
                   </div>
                 </div>
 
-                {/* Heart Icon ở giữa */}
-                <div className="text-rose-500 animate-pulse flex-shrink-0 flex items-center justify-center -mt-3 sm:mt-0">
+                {/* Heart Icon */}
+                <div className="text-rose-400 animate-pulse flex-shrink-0 flex items-center justify-center -mt-3 sm:mt-0 drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)]">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
-                    className="w-5 h-5 sm:w-7 sm:h-7 md:w-9 md:h-9 lg:w-11 lg:h-11 text-rose-500 fill-rose-400/20 stroke-rose-500 stroke-[1.5]"
+                    className="w-5 h-5 sm:w-7 sm:h-7 md:w-9 md:h-9 lg:w-11 lg:h-11 text-rose-400 fill-rose-500/20 stroke-rose-400 stroke-[1.5]"
                   >
                     <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
                   </svg>
@@ -106,7 +137,7 @@ export const HeroSection = ({
                   </div>
                   <div className="w-24 sm:w-32 md:w-40 lg:w-48 xl:w-56 mx-auto px-1 sm:px-2">
                     <h3
-                      className="text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl font-serif text-gray-800 break-words hyphens-auto leading-tight overflow-wrap-anywhere font-semibold sm:font-normal"
+                      className="text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl font-serif text-white break-words hyphens-auto leading-tight overflow-wrap-anywhere font-bold drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]"
                       title={couple.groom.fullName}
                     >
                       {couple.groom.name}
@@ -135,7 +166,7 @@ export const HeroSection = ({
                 onClick={() => onScrollToSection("details")}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-white/80 backdrop-blur-sm text-gray-800 px-6 sm:px-8 py-2.5 sm:py-4 rounded-full font-semibold text-xs sm:text-base md:text-lg shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 cursor-pointer"
+                className="bg-white/90 backdrop-blur-md text-gray-900 px-6 sm:px-8 py-2.5 sm:py-4 rounded-full font-semibold text-xs sm:text-base md:text-lg shadow-lg hover:shadow-xl transition-all duration-300 border border-white cursor-pointer"
               >
                 {t("hero.view-details")}
               </motion.button>
@@ -154,10 +185,10 @@ export const HeroSection = ({
             <motion.div
               animate={{ y: [0, 10, 0] }}
               transition={{ duration: 2, repeat: Infinity }}
-              className="text-gray-600 text-center cursor-pointer"
+              className="text-white text-center cursor-pointer drop-shadow-[0_1px_2px_rgba(0,0,0,0.9)]"
               onClick={() => onScrollToSection("couple")}
             >
-              <div className="text-[10px] sm:text-xs mb-1 sm:mb-2">
+              <div className="text-[10px] sm:text-xs mb-1 sm:mb-2 font-semibold">
                 {t("hero.scroll-down")}
               </div>
               <div className="text-base sm:text-xl">⬇️</div>

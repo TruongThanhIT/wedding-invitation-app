@@ -11,3 +11,4 @@ export { default as FloatingNavigation } from './floating-navigation';
 export { default as NavigationFAB } from './navigation-fab';
 export { default as MusicPlayer } from './music-player';
 export { default as ScrollProgressIndicator } from './scroll-progress-indicator';
+export { WeddingEventSection } from './wedding-event-section'; 
