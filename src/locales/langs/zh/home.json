@@ -1,0 +1,367 @@
+{
+  "letter": {
+    "guest": "您",
+    "dear": "亲爱的朋友们：",
+    "you-are-invited": "诚挚邀请您出席我们的婚礼，与我们一同分享这份喜悦与幸福。",
+    "to": "致",
+    "invitation-title": "诚邀您见证我们的神圣时刻！",
+    "invitation-quote": "自相识以来，我们的世界便充满了无数温馨而美好的小确幸……",
+    "click-to-open-hover": "点击此处开启请柬",
+    "click-to-open": "点击请柬开启婚礼邀请",
+    "opening-the-invitation": "正在开启请柬……"
+  },
+  "closing-message": {
+    "title": "期待您的光临",
+    "quote": "有您的见证与祝福，我们的婚礼将更加圆满而深具意义。感谢您一路以来的相伴与关爱。",
+    "with-love": "爱您的",
+    "hashtags": "#执子之手 #与子偕老",
+    "contact": "如有任何疑问，欢迎随时通过 Zalo (+84 782 808 428) 或电子邮件 (truongthanh.it95@gmail.com) 与我们联系！"
+  },
+  "hero": {
+    "welcome": "欢迎参加我们的婚礼庆典",
+    "together": "开启属于我们的甜蜜新篇章",
+    "scroll-down": "向下向滑",
+    "scroll-to-explore": "向下滑动，探索我们的爱情故事",
+    "view-details": "查看婚礼详情"
+  },
+  "couple": {
+    "title": "新人介绍",
+    "bride-description": "温柔而坚定，心中充满爱与对未来美好生活的憧憬。",
+    "groom-description": "真诚而体贴，总是用欢声笑语温暖生活中的每一个平凡瞬间。",
+    "our-story": "我们的故事",
+    "story-text": "故事始于一句简单的问候，随岁月渐渐凝聚成一段满载爱意的旅程。非常高兴能与大家分享这个特别的日子。",
+    "the-groom": "新郎",
+    "the-bride": "新娘",
+    "love-quote": "从今往后，愿与你共度每一个朝夕，看遍日出日落。"
+  },
+  "details": {
+    "title": "婚礼详情",
+    "date": "婚礼日期",
+    "time": "时间",
+    "day": "日",
+    "month": "月",
+    "year": "年",
+    "countdown": "婚礼倒计时",
+    "hours": "小时",
+    "minutes": "分钟",
+    "seconds": "秒",
+    "countdown-title": "携手余生 倒计时",
+    "countdown-subtitle": "流逝的每一分每一秒，都让我们离幸福更近一步",
+    "days-until": "天 后，我们将正式开启共同的生活！💕",
+    "hours-until": "小时 后，我们将正式开启共同的生活！💕",
+    "minutes-until": "分钟 后，我们将正式开启共同的生活！💕",
+    "moment-arrived": "幸福的神圣时刻终于到来！💕",
+    "join-us-text": "期待您的光临，共同见证我们开启人生新篇章",
+    "mark-calendar": "记得留出时间哦！📅",
+    "add-to-calendar": "添加至日历",
+    "message": "不要忘记我们的神圣时刻！将婚礼行程保存至日历，以便随时提醒。",
+    "ceremony": "越式婚礼仪式",
+    "get-directions": "获取导航路线",
+    "reception": "婚宴喜宴",
+    "please-note": "温馨提示",
+    "dress-code": "着装建议",
+    "formal-attire": "建议穿着粉色、白色或米色等浅色系正装",
+    "parking": "停车信息",
+    "valet-available": "现场提供摩托车及汽车停车位",
+    "contact": "联系方式 (Zalo)",
+    "our-wedding-day": "我们的大婚之日",
+    "join-us": "诚邀您与我们同庆！"
+  },
+  "venue": {
+    "title": "婚礼地点",
+    "ceremony": "越式婚礼仪式",
+    "reception": "婚宴喜宴",
+    "get-directions": "获取导航路线",
+    "schedule-title": "婚礼当天流程",
+    "preparation": "仪式准备",
+    "ceremony-time": "婚礼仪式",
+    "reception-time": "婚宴喜宴",
+    "party": "派对环节",
+    "location-title": "地点与导航",
+    "location-subtitle": "期待在以下地点与您共度美好的婚礼时光",
+    "ceremony-details": "仪式注意事项",
+    "reception-details": "婚宴安排",
+    "arrive-early": "传统家仪式为家庭内部温馨小聚，主要邀请至亲长辈与近亲",
+    "unplugged": "非常期待在晚间的婚宴上与大家共同庆祝",
+    "parking": "若您将参加在家中举办的传统仪式，请留意我们单独发送的通知。",
+    "welcome-drink": "上午 11:00 • 宾客签到入座",
+    "open-bar": "上午 11:30 • 婚宴正式开始",
+    "dancing": "停车：宴会厅现场设有摩托车及汽车专属停车区域。",
+    "view-map": "在地图中查看"
+  },
+  "rsvp": {
+    "title": "出席确认 (RSVP)",
+    "subtitle": "请提前告知您的出席情况，以便我们为您做最周全的准备",
+    "name": "姓名",
+    "email": "电子邮箱",
+    "attendance": "您是否出席婚礼？",
+    "yes": "是的，我一定准时参加！",
+    "no": "抱歉，因故无法前往",
+    "guests": "同行人数",
+    "message": "给新人的留言（选填）",
+    "submit": "提交回复",
+    "thank-you": "感谢您的回复！",
+    "confirm-attendance": "出席确认",
+    "full-name": "姓名",
+    "email-address": "电子邮箱",
+    "will-attend": "您是否出席婚礼？",
+    "please-select": "请选择选项",
+    "yes-there": "是的，我一定准时参加！🎉",
+    "no-cant": "抱歉，因故无法前往 😢",
+    "number-guests": "同行人数",
+    "guest-count": "人",
+    "guest-1": "仅限本人（1人）",
+    "guests-count": "{{count}} 人",
+    "dietary-restrictions": "饮食禁忌 / 忌口提示",
+    "dietary-placeholder": "您是否有过敏源或特殊饮食要求（如素食等）？",
+    "message-couple": "给新人的祝福语",
+    "message-placeholder": "留下您对新人的温馨祝福吧……",
+    "send-rsvp": "发送出席确认 💕",
+    "thank-you-received": "我们已收到您的回复，非常期待在婚礼现场与您相见！",
+    "deadline": "确认截止日期",
+    "deadline-date": "2026年12月20日",
+    "deadline-help": "请在此日期前完成回复，以便我们安排席位与餐食。非常感谢您的配合！",
+    "questions": "如有疑问？",
+    "questions-help": "如果您有任何疑问，请随时与我们取得联系！",
+    "gift-registry": "礼金 / 贺礼",
+    "presence-present": "您的光临与祝福就是给我们最好的礼物",
+    "registry-text": "如果您想为新人送上一份贺礼，可参考以下信息：",
+    "full-name-placeholder": "请输入您的真实姓名",
+    "email-placeholder": "email@gmail.com",
+    "submitting": "提交中...",
+    "gift-registry-title": "线上祝福心意 💌",
+    "presence-is-present": "能与大家共同分享这一幸福时刻，我们感到无比幸运！❤️",
+    "gift-message": "如果您想为新人送上一份心意，可扫描下方二维码。这完全凭个人心意，请不必有任何压力哦！🥰 感谢大家给予我们的爱与支持！💗",
+    "bank-label": "开户银行：",
+    "bank-name": "Techcombank",
+    "bank-account-label": "银行账号：",
+    "bank-account-number": "9565 2207 95",
+    "bank-holder-label": "户名：",
+    "bank-holder-name": "Trương Huỳnh Thụy Thái Thanh",
+    "bank-note": "转账附言：Thanh 与 Zhe 婚礼贺礼 - [您的姓名]",
+    "error-alert": "提交出席确认时出现错误，请重试或直接联系新人。"
+  },
+  "navigation": {
+    "home": "首页",
+    "couple": "新人",
+    "details": "婚礼详情",
+    "venue": "地点",
+    "gallery": "相册",
+    "rsvp": "出席确认",
+    "love-story": "爱情故事"
+  },
+  "schedule": {
+    "title": "婚礼当天流程",
+    "guest-arrival": "宾客签到 & 入座",
+    "welcome-drinks": "迎宾饮品",
+    "wedding-ceremony": "越式传统婚礼仪式",
+    "vows": "新人宣誓",
+    "photography": "合影留念",
+    "welcome-drink": "迎宾饮品",
+    "reception-begins": "宴会开始",
+    "dinner-celebration": "晚宴喜宴",
+    "first-dance": "新人首舞",
+    "special-moment": "新人浪漫时刻",
+    "dancing-party": "音乐 & 舞会",
+    "celebration-continues": "让狂欢与庆祝继续！",
+    "send-off": "欢送新人",
+    "sparkler-farewell": "手持仙女棒欢送新人"
+  },
+  "music": {
+    "wedding-music": "婚礼背景音乐",
+    "click-to-start": "点击音乐按钮播放",
+    "playing": "正在播放",
+    "paused": "已暂停",
+    "enable-music": "播放婚礼背景音乐",
+    "browser-blocked": "您的浏览器阻止了自动播放，请点击下方按钮开启音乐。",
+    "how-to-enable": "如何开启自动播放：",
+    "chrome-edge": "Chrome/Edge: 点击地址栏 🔒 图标 → 声音 → 允许",
+    "firefox": "Firefox: 点击地址栏 🔊 图标 → 允许音频",
+    "safari": "Safari: 设置 → 网站 → 自动播放 → 允许所有",
+    "play-music": "🎵 播放音乐",
+    "later": "稍后再说",
+    "auto-note": "开启此功能后，背景音乐将自动播放"
+  },
+  "loveStory": {
+    "title": "我们的故事",
+    "subtitle": "从代码与漫长航班的交错，到在新西兰安家落户的宁静时光。",
+    "viewPhotos": "查看照片 →",
+    "viewAlbum": "查看纪念相册",
+    "viewAllPhotos": "查看所有照片",
+    "items": {
+      "linkedin": {
+        "badge": "领英上的招呼",
+        "title": "意想不到的缘分",
+        "description": "老同事的介绍，让我们在……领英 (LinkedIn) 上相识。"
+      },
+      "firstMeet": {
+        "badge": "第一次飞行",
+        "title": "首次相见与表白",
+        "description": "在网路上热聊两个月后，他飞往越南，迎来了我们的第一次线下相见。"
+      },
+      "chinaTour": {
+        "badge": "中国之旅",
+        "title": "难忘的生日",
+        "description": "我飞去探望他，在上海迪士尼乐园庆祝了生日，并一同游览了中国。"
+      },
+      "vietnamTour": {
+        "badge": "越南探索之旅",
+        "title": "共同的冒险",
+        "description": "我们收拾行囊，携手探索了越南的美景。"
+      },
+      "newZealand": {
+        "badge": "新西兰的家",
+        "title": "携手筑建未来",
+        "description": "我们选择在新西兰发展事业并打拼未来：他在 BNZ 银行工作，我在 Westpac 银行工作。"
+      },
+      "propose": {
+        "badge": "求婚时刻",
+        "title": "特别的瞬间",
+        "description": "三小时的徒步，两条步道，一个深刻的问题，和一句幸福的“我愿意”。❤️"
+      },
+      "prewedding": {
+        "badge": "携手余生",
+        "title": "婚纱照相册",
+        "description": "定格我们迈向永恒旅程中的所有爱意与喜悦。"
+      }
+    }
+  },
+  "gallery": {
+    "categories": {
+      "all": "全部",
+      "prewedding": "婚纱照",
+      "propose": "求婚时刻",
+      "linkedin": "领英初识",
+      "firstMeet": "首次相见",
+      "chinaTour": "中国之旅",
+      "vietnamTour": "越南之旅",
+      "newZealand": "新西兰生活"
+    },
+    "title": "婚礼相册",
+    "journeyTitle": "爱的旅程",
+    "journeySubtitle": "记录我们最珍贵的浪漫时刻",
+    "viewFull": "查看全部照片",
+    "fullAlbumTitle": "回忆珍藏集",
+    "fullAlbumSubtitle": "收录了我们最珍视的点滴回忆",
+    "clickToZoom": "点击放大",
+    "clickToClose": "x 关闭相册",
+    "items": {
+      "pre1": {
+        "title": "序章",
+        "desc": "在晨曦阳光下并肩同行"
+      },
+      "pre2": {
+        "title": "幸福的约定",
+        "desc": "眼神交汇中的深情款款"
+      },
+      "pre3": {
+        "title": "岁月静好",
+        "desc": "手牵手走过熟悉的街道"
+      },
+      "pre4": {
+        "title": "午后暖阳",
+        "desc": "定格浪漫的光影瞬间"
+      },
+      "pre5": {
+        "title": "灿烂笑容",
+        "desc": "幸福在每一个眼神中闪耀"
+      },
+      "pre6": {
+        "title": "回忆之街",
+        "desc": "自然而舒适的真挚默契"
+      },
+      "pre7": {
+        "title": "爱意满盈",
+        "desc": "携手展望共同的未来"
+      },
+      "pre8": {
+        "title": "晨光微熹",
+        "desc": "沉浸在甜蜜温馨的时光里"
+      },
+      "pre9": {
+        "title": "极致浪漫",
+        "desc": "珍惜彼此相伴的温柔岁月"
+      },
+      "pre10": {
+        "title": "温暖港湾",
+        "desc": "在一起的每一刻都倍感安心"
+      },
+      "pre11": {
+        "title": "喜悦笑颜",
+        "desc": "目光胜过万语千言"
+      },
+      "pre12": {
+        "title": "展望未来",
+        "desc": "共同书写我们人生故事的新篇章"
+      },
+      "pre13": {
+        "title": "幸福之花",
+        "desc": "大婚之日的点滴精致"
+      },
+      "pre14": {
+        "title": "铭记此刻",
+        "desc": "爱情长跑中最美好的回忆"
+      },
+      "mem1": {
+        "title": "特别的生日",
+        "desc": "第一次在上海迪士尼乐园共同庆祝 Thanh 的生日"
+      },
+      "mem2": {
+        "title": "回忆足迹",
+        "desc": "我们第一次一同前往广州旅行"
+      },
+      "mem3": {
+        "title": "幸运极光",
+        "desc": "在新西兰第一次幸运追到南极光"
+      },
+      "mem4": {
+        "title": "初次赏雪",
+        "desc": "在新西兰蒂卡波 (Tekapo) 第一次一起玩雪"
+      },
+      "mem5": {
+        "title": "意想不到的缘分",
+        "desc": "老同事的介绍，让我们在……领英 (LinkedIn) 上相识。"
+      },
+      "mem6": {
+        "title": "美食与探索",
+        "desc": "打卡上海美景，品尝中国特色美食"
+      },
+      "firstMeet": {
+        "title": "初见时光",
+        "desc": "我们第一次线下相见的美好记忆"
+      },
+      "inLove": {
+        "title": "正式交往",
+        "desc": "我们确立恋爱关系的那一天"
+      },
+      "vietnamTour1": {
+        "title": "越南之旅",
+        "desc": "一起漫步河内"
+      },
+      "vietnamTour2": {
+        "title": "越南之旅",
+        "desc": "游览长安名胜群"
+      },
+      "vietnamTour3": {
+        "title": "越南之旅",
+        "desc": "在岘港爱情桥边的合影"
+      },
+      "newZealand": {
+        "title": "新西兰的家",
+        "desc": "我们选择在新西兰打拼事业：他在 BNZ 银行工作，我在 Westpac 银行工作。"
+      },
+      "propose1": {
+        "title": "求婚时刻",
+        "desc": "我愿意！❤️"
+      },
+      "propose2": {
+        "title": "求婚时刻",
+        "desc": "一张完全没有在“炫耀”求婚戒指的合影 ^^"
+      },
+      "propose3": {
+        "title": "求婚时刻",
+        "desc": "本想拍一张严肃正经的照片，结果不小心画风变搞笑"
+      }
+    }
+  }
+}

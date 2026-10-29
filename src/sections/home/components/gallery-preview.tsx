@@ -438,27 +438,30 @@ export const GalleryPreview = ({
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.95 }}
-            className="fixed inset-0 z-50 bg-white overflow-y-auto p-4 sm:p-8"
+            className="fixed inset-0 z-50 bg-white overflow-y-auto"
           >
-            <div className="max-w-6xl mx-auto">
-              <div className="flex justify-between items-center mb-8 border-b border-gray-100 pb-4">
+            {/* STICKY HEADER: Cố định tiêu đề và nút đóng khi scroll */}
+            <div className="sticky top-0 z-30 bg-white/90 backdrop-blur-md border-b border-gray-100 shadow-sm px-4 sm:px-8 py-4">
+              <div className="max-w-6xl mx-auto flex justify-between items-center">
                 <div>
-                  <h3 className="text-2xl sm:text-3xl font-serif text-gray-800">
+                  <h3 className="text-xl sm:text-3xl font-serif text-gray-800">
                     {t("gallery.fullAlbumTitle")}
                   </h3>
-                  <p className="text-xs sm:text-sm text-gray-500">
+                  <p className="text-[11px] sm:text-sm text-gray-500">
                     {t("gallery.fullAlbumSubtitle")}
                   </p>
                 </div>
                 <button
                   onClick={() => setIsFullGalleryOpen(false)}
-                  className="w-10 h-10 rounded-full bg-gray-100 text-gray-600 hover:bg-rose-100 hover:text-rose-600 flex items-center justify-center font-bold transition-all"
+                  className="w-10 h-10 rounded-full bg-gray-100 text-gray-600 hover:bg-rose-100 hover:text-rose-600 flex items-center justify-center font-bold transition-all shadow-sm cursor-pointer"
+                  title="Đóng"
                 >
                   ✕
                 </button>
               </div>
 
-              <div className="flex flex-wrap gap-2 mb-8 justify-center">
+              {/* STICKY TABS: Thanh lọc danh mục đi kèm dưới header để tiện đổi tab khi đang cuộn sâu */}
+              <div className="max-w-6xl mx-auto flex flex-wrap gap-2 mt-4 justify-center">
                 {tabs.map((tab) => (
                   <button
                     key={tab.key}
@@ -466,7 +469,7 @@ export const GalleryPreview = ({
                       setActiveTab(tab.key);
                       if (onChangeCategory) onChangeCategory(tab.key);
                     }}
-                    className={`px-5 py-2.5 rounded-full text-xs sm:text-sm font-medium transition-all ${
+                    className={`px-4 py-2 rounded-full text-xs sm:text-sm font-medium transition-all ${
                       activeTab === tab.key
                         ? "bg-rose-500 text-white shadow-md"
                         : "bg-gray-100 text-gray-600 hover:bg-gray-200"
@@ -476,7 +479,10 @@ export const GalleryPreview = ({
                   </button>
                 ))}
               </div>
+            </div>
 
+            {/* CONTENT GRID */}
+            <div className="max-w-6xl mx-auto p-4 sm:p-8">
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
                 {filteredImages.map((image) => (
                   <div
@@ -508,6 +514,16 @@ export const GalleryPreview = ({
                 ))}
               </div>
             </div>
+
+            {/* FLOATING CLOSE BUTTON (Trợ năng cho Mobile): Nút nổi góc dưới màn hình giúp người dùng đóng nhanh bất cứ lúc nào */}
+            {/* <div className="fixed bottom-6 right-6 z-40 sm:hidden">
+              <button
+                onClick={() => setIsFullGalleryOpen(false)}
+                className="bg-rose-500 text-white px-5 py-3 rounded-full shadow-2xl font-medium text-sm flex items-center gap-2 border-2 border-white"
+              >
+                <span>{t("gallery.clickToClose")}</span>
+              </button>
+            </div> */}
           </motion.div>
         )}
       </AnimatePresence>

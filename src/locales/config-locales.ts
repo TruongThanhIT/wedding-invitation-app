@@ -1,5 +1,5 @@
 export const fallbackLng = 'vi';
-export const languages = ['vi', 'en'];
+export const languages = ['vi', 'en', 'zh'] as const;
 export const defaultNS = 'common';
 export const cookieName = 'i18next';
 
@@ -29,5 +29,10 @@ export const changeLangMessages = {
     success: 'Language has been changed!',
     error: 'Error changing language!',
     loading: 'Loading...',
+  },
+  zh: {
+    success: '语言已更改！',
+    error: '更改语言时出错！',
+    loading: '加载中...',
   },
 };

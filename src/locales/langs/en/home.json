@@ -244,6 +244,7 @@
     "fullAlbumTitle": "Memories Collection",
     "fullAlbumSubtitle": "A collection of our most cherished memories",
     "clickToZoom": "Tap to enlarge",
+    "clickToClose": "x Close Album",
     "items": {
       "pre1": {
         "title": "The Beginning",
