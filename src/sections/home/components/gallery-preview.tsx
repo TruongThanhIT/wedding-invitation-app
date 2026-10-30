@@ -34,6 +34,7 @@ export const GalleryPreview = ({
   onChangeCategory,
 }: GalleryPreviewProps) => {
   const { t } = useTranslation("home");
+  const translate = (key: string) => t(key as any);
 
   const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(
     null,
@@ -111,7 +112,7 @@ export const GalleryPreview = ({
       titleKey: "gallery.items.propose1.title",
       descriptionKey: "gallery.items.propose1.desc",
     },
-     {
+    {
       id: 28,
       category: "propose",
       src: "/assets/images/gallery/propose-2.png",
@@ -291,7 +292,7 @@ export const GalleryPreview = ({
                   : "bg-white text-gray-600 hover:bg-rose-50 border border-gray-200"
               }`}
             >
-              {t(tab.labelKey)}
+              {translate(tab.labelKey)}
             </button>
           ))}
         </div>
@@ -316,7 +317,7 @@ export const GalleryPreview = ({
                 <div className="relative w-full h-full">
                   <Image
                     src={image.src}
-                    alt={t(image.titleKey)}
+                    alt={translate(image.titleKey)}
                     fill
                     sizes="(max-width: 768px) 50vw, 33vw"
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -331,11 +332,11 @@ export const GalleryPreview = ({
                   </div>
                   <div className="text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
                     <p className="text-xs sm:text-sm font-semibold">
-                      {t(image.titleKey)}
+                      {translate(image.titleKey)}
                     </p>
                     {image.descriptionKey && (
                       <p className="text-[11px] sm:text-xs opacity-80">
-                        {t(image.descriptionKey)}
+                        {translate(image.descriptionKey)}
                       </p>
                     )}
                   </div>
@@ -403,16 +404,16 @@ export const GalleryPreview = ({
             >
               <img
                 src={fullGallery[selectedImageIndex].src}
-                alt={t(fullGallery[selectedImageIndex].titleKey)}
+                alt={translate(fullGallery[selectedImageIndex].titleKey)}
                 className="max-w-full max-h-[75vh] object-contain rounded-xl shadow-2xl"
               />
               <div className="mt-4 text-center text-white">
                 <h3 className="text-lg font-serif font-semibold">
-                  {t(fullGallery[selectedImageIndex].titleKey)}
+                  {translate(fullGallery[selectedImageIndex].titleKey)}
                 </h3>
                 {fullGallery[selectedImageIndex].descriptionKey && (
                   <p className="text-xs sm:text-sm text-gray-300 mt-1">
-                    {t(fullGallery[selectedImageIndex].descriptionKey!)}
+                    {translate(fullGallery[selectedImageIndex].descriptionKey!)}
                   </p>
                 )}
               </div>
@@ -475,7 +476,7 @@ export const GalleryPreview = ({
                         : "bg-gray-100 text-gray-600 hover:bg-gray-200"
                     }`}
                   >
-                    {t(tab.labelKey)}
+                    {translate(tab.labelKey)}
                   </button>
                 ))}
               </div>
@@ -497,14 +498,14 @@ export const GalleryPreview = ({
                   >
                     <Image
                       src={image.src}
-                      alt={t(image.titleKey)}
+                      alt={translate(image.titleKey)}
                       fill
                       sizes="(max-width: 768px) 50vw, 25vw"
                       className="object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                     <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center text-white p-2 text-center">
                       <p className="text-xs font-semibold">
-                        {t(image.titleKey)}
+                        {translate(image.titleKey)}
                       </p>
                       <p className="text-[10px] text-gray-200 mt-0.5">
                         {t("gallery.clickToZoom")}

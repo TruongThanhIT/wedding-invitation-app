@@ -149,7 +149,7 @@ export const WeddingEventSection = ({ date, venue }: WeddingEventSectionProps) =
                 <div className="flex items-center gap-2">
                   <span className="text-lg">🏡</span>
                   <h3 className="font-serif font-bold text-gray-900 text-base sm:text-lg">
-                    LỄ VU QUY
+                     {t("venue.ceremony-time")}
                   </h3>
                   <span className="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded-md font-semibold">
                     {venue.ceremony.time}
@@ -166,7 +166,7 @@ export const WeddingEventSection = ({ date, venue }: WeddingEventSectionProps) =
                 onClick={() => window.open(generateMapLink(venue.ceremony), "_blank")}
                 className="self-start sm:self-center shrink-0 bg-purple-600 text-white px-3.5 py-2 rounded-xl text-xs font-medium hover:bg-purple-700 transition-colors shadow-sm cursor-pointer"
               >
-                📍 Bản đồ
+                📍 {t("venue.view-map")}
               </button>
             </div>
 
@@ -176,7 +176,7 @@ export const WeddingEventSection = ({ date, venue }: WeddingEventSectionProps) =
                 <div className="flex items-center gap-2">
                   <span className="text-lg">🥂</span>
                   <h3 className="font-serif font-bold text-gray-900 text-base sm:text-lg">
-                    TIỆC CƯỚI
+                    {t("venue.reception-time")}
                   </h3>
                   <span className="text-xs bg-amber-100 text-amber-800 px-2 py-0.5 rounded-md font-semibold">
                     {venue.reception.time}
@@ -193,7 +193,7 @@ export const WeddingEventSection = ({ date, venue }: WeddingEventSectionProps) =
                 onClick={() => window.open(generateMapLink(venue.reception), "_blank")}
                 className="self-start sm:self-center shrink-0 bg-amber-600 text-white px-3.5 py-2 rounded-xl text-xs font-medium hover:bg-amber-700 transition-colors shadow-sm cursor-pointer"
               >
-                📍 Bản đồ
+                📍 {t("venue.view-map")}
               </button>
             </div>
           </motion.div>

@@ -72,7 +72,6 @@ export default function HomeView() {
         activeSection={activeSection}
         onScrollToSection={scrollToSection}
       />
-
       {/* Hero Section */}
       <section id="hero" className="relative">
         <HeroSection
@@ -81,7 +80,6 @@ export default function HomeView() {
           onScrollToSection={scrollToSection}
         />
       </section>
-
       {/* Couple Introduction */}
       <section id="couple" className="relative">
         <CoupleIntroduction
@@ -90,23 +88,21 @@ export default function HomeView() {
           isVisible={isLoaded}
         />
       </section>
-
-      // Date & Venue Section
+      {/* // Date & Venue Section */}
       <WeddingEventSection
-        date={WEDDING_CONFIG.date} 
+        date={WEDDING_CONFIG.date}
         venue={WEDDING_CONFIG.venue}
       />
-
       {/* RSVP Section */}
-      <section id="rsvp" className="relative">
-        <RSVP />
-      </section>
-
+      {WEDDING_CONFIG.showRsvp && (
+        <section id="rsvp" className="relative">
+          <RSVP />
+        </section>
+      )}
       {/* 2. CÂU CHUYỆN TÌNH YÊU (LOVE STORY) - ĐẶT TRƯỚC GALLERY */}
       {/* <section id="love-story" className="relative">
         <LoveStory onSelectCategory={(cat) => setActiveCategory(cat as any)} />
       </section> */}
-
       {/* 3. BỘ ẢNH KỶ NIỆM (GALLERY PREVIEW) - NHẬN STATE DỰA TRÊN TIMELINE CLICK */}
       <section id="gallery" className="relative scroll-mt-20">
         <GalleryPreview
@@ -114,7 +110,6 @@ export default function HomeView() {
           onChangeCategory={(cat) => setActiveCategory(cat as any)}
         />
       </section>
-
       {/* Closing Message */}
       <section id="closing" className="relative">
         <ClosingMessage
@@ -123,16 +118,13 @@ export default function HomeView() {
         />
         <CountdownTimer targetDate={WEDDING_CONFIG.date} />
       </section>
-
       {/* Music Player */}
       <MusicPlayer />
-
       {/* Mobile Navigation FAB */}
       <NavigationFAB
         activeSection={activeSection}
         onScrollToSection={scrollToSection}
       />
-
       {/* Scroll Progress Indicator */}
       <ScrollProgressIndicator activeSection={activeSection} />
     </div>

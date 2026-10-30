@@ -18,6 +18,7 @@ export function NavigationButton({
   onClick,
 }: NavigationButtonProps) {
   const { t } = useTranslation("home");
+  const translate = (key: string) => t(key as any);
 
   const baseClasses =
     "relative flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-4 py-2 sm:py-2.5 rounded-lg sm:rounded-xl text-xs sm:text-sm font-medium transition-all duration-300 group overflow-hidden cursor-pointer";
@@ -80,7 +81,7 @@ export function NavigationButton({
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.3, delay: 0.1 * index }}
       >
-        {t(section.labelKey)}
+        {translate(section.labelKey)}
       </motion.span>
 
       {/* Active Indicator Dot with Pulse */}

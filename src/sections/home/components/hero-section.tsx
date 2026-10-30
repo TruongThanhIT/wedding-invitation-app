@@ -67,7 +67,7 @@ export const HeroSection = ({
               transition={{ duration: 1, delay: 0.2 }}
               className="mb-4 sm:mb-8"
             >
-              <div className="text-xs sm:text-base md:text-lg lg:text-xl text-white mb-2 sm:mb-4 font-medium drop-shadow-[0_1px_3px_rgba(0,0,0,0.8)]">
+              <div className="text-xs sm:text-base md:text-lg lg:text-xl text-white mb-2 sm:mb-4 font-medium drop-shadow-[0_1px_3px_rgba(0,0,0,0.8)] suppressHydrationWarning">
                 {t("hero.welcome")}
               </div>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-serif text-white mb-3 sm:mb-6 leading-tight drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]">
