@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { AnimatePresence, motion } from "motion/react";
 import { useScrollSpy } from "@/hooks/use-scroll-spy";
 import { LetterAnimation } from "@/components";
 import {
@@ -22,27 +23,21 @@ export default function HomeView() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [showLetter, setShowLetter] = useState(true);
 
-  // 1. STATE QUẢN LÝ CATEGORY KHI CLICK TỪ TIMELINE SANG GALLERY
   const [activeCategory, setActiveCategory] = useState<
     "all" | "prewedding" | "memories"
   >("all");
 
-  // Auto-detect active section using scroll spy
   const activeSection = useScrollSpy(
     NAVIGATION_SECTIONS.map((section) => section.id),
   );
 
   useEffect(() => {
-    const timer = setTimeout(() => setIsLoaded(true), 300);
-
-    return () => {
-      clearTimeout(timer);
-    };
+    const timer = setTimeout(() => setIsLoaded(true), 250);
+    return () => clearTimeout(timer);
   }, []);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
-
     if (element) {
       element.scrollIntoView({
         behavior: "smooth",
@@ -53,80 +48,94 @@ export default function HomeView() {
 
   const handleLetterOpen = () => {
     setShowLetter(false);
-    setTimeout(() => setIsLoaded(true), 300);
+    setIsLoaded(true);
   };
-
-  // Show letter animation first
-  if (showLetter) {
-    return (
-      <LetterAnimation
-        onOpen={handleLetterOpen}
-        coupleName={`${WEDDING_CONFIG.bride.name} & ${WEDDING_CONFIG.groom.name}`}
-      />
-    );
-  }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-rose-50 via-pink-50 to-purple-50">
-      <FloatingNavigation
-        activeSection={activeSection}
-        onScrollToSection={scrollToSection}
-      />
-      {/* Hero Section */}
-      <section id="hero" className="relative">
-        <HeroSection
-          isLoaded={isLoaded}
-          couple={WEDDING_CONFIG}
-          onScrollToSection={scrollToSection}
-        />
-      </section>
-      {/* Couple Introduction */}
-      <section id="couple" className="relative">
-        <CoupleIntroduction
-          bride={WEDDING_CONFIG.bride}
-          groom={WEDDING_CONFIG.groom}
-          isVisible={isLoaded}
-        />
-      </section>
-      {/* // Date & Venue Section */}
-      <WeddingEventSection
-        date={WEDDING_CONFIG.date}
-        venue={WEDDING_CONFIG.venue}
-      />
-      {/* RSVP Section */}
-      {WEDDING_CONFIG.showRsvp && (
-        <section id="rsvp" className="relative">
-          <RSVP />
-        </section>
-      )}
-      {/* 2. CÂU CHUYỆN TÌNH YÊU (LOVE STORY) - ĐẶT TRƯỚC GALLERY */}
-      {/* <section id="love-story" className="relative">
-        <LoveStory onSelectCategory={(cat) => setActiveCategory(cat as any)} />
-      </section> */}
-      {/* 3. BỘ ẢNH KỶ NIỆM (GALLERY PREVIEW) - NHẬN STATE DỰA TRÊN TIMELINE CLICK */}
-      <section id="gallery" className="relative scroll-mt-20">
-        <GalleryPreview
-          activeCategory={activeCategory}
-          onChangeCategory={(cat) => setActiveCategory(cat as any)}
-        />
-      </section>
-      {/* Closing Message */}
-      <section id="closing" className="relative">
-        <ClosingMessage
-          bride={WEDDING_CONFIG.bride.fullName}
-          groom={WEDDING_CONFIG.groom.fullName}
-        />
-        <CountdownTimer targetDate={WEDDING_CONFIG.date} />
-      </section>
-      {/* Music Player */}
-      <MusicPlayer />
-      {/* Mobile Navigation FAB */}
-      <NavigationFAB
-        activeSection={activeSection}
-        onScrollToSection={scrollToSection}
-      />
-      {/* Scroll Progress Indicator */}
-      <ScrollProgressIndicator activeSection={activeSection} />
+      <AnimatePresence mode="wait">
+        {showLetter ? (
+          <LetterAnimation
+            key="letter-envelope"
+            onOpen={handleLetterOpen}
+            coupleName={`${WEDDING_CONFIG.bride.name} & ${WEDDING_CONFIG.groom.name}`}
+          />
+        ) : (
+          <motion.div
+            key="wedding-content"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
+          >
+            <FloatingNavigation
+              activeSection={activeSection}
+              onScrollToSection={scrollToSection}
+            />
+
+            {/* Hero Section */}
+            <section id="hero" className="relative">
+              <HeroSection
+                isLoaded={isLoaded}
+                couple={WEDDING_CONFIG}
+                onScrollToSection={scrollToSection}
+              />
+            </section>
+
+            {/* Couple Introduction */}
+            <section id="couple" className="relative">
+              <CoupleIntroduction
+                bride={WEDDING_CONFIG.bride}
+                groom={WEDDING_CONFIG.groom}
+                isVisible={isLoaded}
+              />
+            </section>
+
+            {/* Date & Venue Section */}
+            <section id="details" className="relative">
+              <WeddingEventSection
+                date={WEDDING_CONFIG.date}
+                venue={WEDDING_CONFIG.venue}
+              />
+            </section>
+
+            {/* RSVP Section */}
+            {WEDDING_CONFIG.showRsvp && (
+              <section id="rsvp" className="relative">
+                <RSVP />
+              </section>
+            )}
+
+            {/* Gallery Preview */}
+            <section id="gallery" className="relative scroll-mt-20">
+              <GalleryPreview
+                activeCategory={activeCategory}
+                onChangeCategory={(cat) => setActiveCategory(cat as any)}
+              />
+            </section>
+
+            {/* Countdown & Closing Message */}
+            <section id="closing" className="relative">
+              <CountdownTimer targetDate={WEDDING_CONFIG.date} />
+              <ClosingMessage
+                bride={WEDDING_CONFIG.bride.fullName}
+                groom={WEDDING_CONFIG.groom.fullName}
+              />
+            </section>
+
+            {/* Music Player */}
+            <MusicPlayer />
+
+            {/* Mobile Navigation FAB */}
+            <NavigationFAB
+              activeSection={activeSection}
+              onScrollToSection={scrollToSection}
+            />
+
+            {/* Scroll Progress Indicator */}
+            <ScrollProgressIndicator activeSection={activeSection} />
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

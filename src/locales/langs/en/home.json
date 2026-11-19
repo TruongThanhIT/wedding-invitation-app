@@ -1,14 +1,16 @@
 {
   "letter": {
     "guest": "You",
-    "dear": "Dear friends,",
+    "dear": "Dear",
     "you-are-invited": "We’d love for you to join us as we celebrate our wedding.",
     "to": "to",
     "invitation-title": "Come celebrate our special day with us!",
     "invitation-quote": "Since we met, our world has been filled with so many beautiful little moments...",
     "click-to-open-hover": "Tap here to open the invitation",
     "click-to-open": "Tap the invitation to open it",
-    "opening-the-invitation": "Opening the invitation..."
+    "opening-the-invitation": "Opening the invitation...",
+    "envelope-title": "Together with our families, we invite you to",
+    "envelope-subtitle": "Come celebrate love, laughter, and our special day"
   },
   "closing-message": {
     "title": "We’d Be So Happy to Have You",
@@ -18,7 +20,7 @@
     "contact": "If you have any questions, feel free to reach us on Zalo at +84 782 808 428 or email us at truongthanh.it95@gmail.com!"
   },
   "hero": {
-    "welcome": "Welcome to Our Wedding Celebration",
+    "welcome": "Together with our families, we invite you to",
     "together": "Starting Our Forever Together",
     "scroll-down": "Scroll Down",
     "scroll-to-explore": "Scroll down to discover our story",
@@ -122,7 +124,7 @@
     "thank-you-received": "We’ve received your RSVP. We look forward to seeing you on our special day!",
     "deadline": "RSVP Deadline",
     "deadline-date": "December 20, 2026",
-    "deadline-help": "Please RSVP by this date so we can make the necessary arrangements. Thanks so much!",
+    "deadline-help": "Please RSVP by this date so we can make the necessary arrangements.\nThanks so much!",
     "questions": "Any Questions?",
     "questions-help": "If you have any questions, feel free to get in touch!",
     "gift-registry": "Wedding Gifts",
@@ -141,7 +143,8 @@
     "bank-holder-label": "Account Holder:",
     "bank-holder-name": "Trương Huỳnh Thụy Thái Thanh",
     "bank-note": "Reference: Wedding gift for Thanh and Zhe - [Your Name]",
-    "error-alert": "Something went wrong while submitting your RSVP. Please try again or message us directly."
+    "error-alert": "Something went wrong while submitting your RSVP. Please try again or message us directly.",
+    "submit-another": "Submit Another RSVP"
   },
   "navigation": {
     "home": "Home",

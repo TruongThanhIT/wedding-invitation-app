@@ -1,14 +1,16 @@
 {
   "letter": {
     "guest": "Bạn",
-    "dear": "Thân gửi bạn,",
+    "dear": "Thân gửi,",
     "you-are-invited": "Tụi mình thân mời bạn đến chung vui trong ngày cưới của tụi mình",
     "to": "đến",
     "invitation-title": "Cùng tụi mình chia sẻ niềm vui trong ngày đặc biệt này nhé!",
     "invitation-quote": "Từ ngày gặp nhau, thế giới của tụi mình đã có thêm thật nhiều điều dịu dàng...",
     "click-to-open-hover": "Chạm vào đây để mở thiệp nhé",
     "click-to-open": "Chạm vào thiệp để mở nhé",
-    "opening-the-invitation": "Đang mở thiệp..."
+    "opening-the-invitation": "Đang mở thiệp...",
+    "envelope-title": "Trân trọng kính mời bạn đến chung vui",
+    "envelope-subtitle": "Cùng lưu giữ những khoảnh khắc hạnh phúc của tụi mình"
   },
   "closing-message": {
     "title": "Rất vui khi được đón bạn",
@@ -18,7 +20,7 @@
     "contact": "Nếu bạn cần hỏi thêm điều gì, cứ nhắn tụi mình qua Zalo: +84 782 808 428 hoặc email: truongthanh.it95@gmail.com nhé!"
   },
   "hero": {
-    "welcome": "Chào mừng bạn đến với ngày vui của tụi mình",
+    "welcome": "Trân trọng kính mời bạn đến chung vui",
     "together": "Mình cùng về chung một nhà",
     "scroll-down": "Kéo xuống",
     "scroll-to-explore": "Kéo xuống để khám phá câu chuyện của tụi mình nhé",
@@ -141,7 +143,8 @@
     "bank-holder-label": "Chủ tài khoản:",
     "bank-holder-name": "Trương Huỳnh Thụy Thái Thanh",
     "bank-note": "Nội dung: Mung cuoi Thanh va Zhe - [Tên bạn]",
-    "error-alert": "Có chút trục trặc khi gửi xác nhận. Bạn thử lại giúp tụi mình hoặc nhắn trực tiếp cho Dâu Rể nha!"
+    "error-alert": "Có chút trục trặc khi gửi xác nhận. Bạn thử lại giúp tụi mình hoặc nhắn trực tiếp cho Dâu Rể nha!",
+    "submit-another": "Gửi thêm xác nhận khác"
   },
   "navigation": {
     "home": "Trang chủ",

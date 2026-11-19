@@ -1,14 +1,16 @@
 {
   "letter": {
     "guest": "您",
-    "dear": "亲爱的朋友们：",
+    "dear": "亲爱的",
     "you-are-invited": "诚挚邀请您出席我们的婚礼，与我们一同分享这份喜悦与幸福。",
     "to": "致",
     "invitation-title": "诚邀您见证我们的神圣时刻！",
     "invitation-quote": "自相识以来，我们的世界便充满了无数温馨而美好的小确幸……",
     "click-to-open-hover": "点击此处开启请柬",
     "click-to-open": "点击请柬开启婚礼邀请",
-    "opening-the-invitation": "正在开启请柬……"
+    "opening-the-invitation": "正在开启请柬……",
+    "envelope-title": "诚挚邀请您共同见证",
+    "envelope-subtitle": "愿与您共享这份美好与幸福时刻"
   },
   "closing-message": {
     "title": "期待您的光临",
@@ -18,7 +20,7 @@
     "contact": "如有任何疑问，欢迎随时通过 Zalo (+84 782 808 428) 或电子邮件 (truongthanh.it95@gmail.com) 与我们联系！"
   },
   "hero": {
-    "welcome": "欢迎参加我们的婚礼庆典",
+    "welcome": "诚挚邀请您共同见证",
     "together": "开启属于我们的甜蜜新篇章",
     "scroll-down": "向下向滑",
     "scroll-to-explore": "向下滑动，探索我们的爱情故事",
@@ -141,7 +143,8 @@
     "bank-holder-label": "户名：",
     "bank-holder-name": "Trương Huỳnh Thụy Thái Thanh",
     "bank-note": "转账附言：Thanh 与 Zhe 婚礼贺礼 - [您的姓名]",
-    "error-alert": "提交出席确认时出现错误，请重试或直接联系新人。"
+    "error-alert": "提交出席确认时出现错误，请重试或直接联系新人。",
+    "submit-another": "提交另一份出席确认"
   },
   "navigation": {
     "home": "首页",

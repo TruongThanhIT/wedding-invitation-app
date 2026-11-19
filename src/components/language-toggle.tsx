@@ -1,17 +1,24 @@
-'use client';
+"use client";
 
-import { useTranslate } from '@/locales';
-import { motion, AnimatePresence } from 'motion/react';
-import { useState, useRef, useEffect } from 'react';
-import { allLangs } from '@/locales/all-langs';
+import { useTranslate } from "@/locales";
+import { motion, AnimatePresence } from "motion/react";
+import { useState, useRef, useEffect } from "react";
+import { allLangs } from "@/locales/all-langs";
 
-// Language Toggle & Dropdown Selector Component
-export function LanguageToggle() {
+interface LanguageToggleProps {
+  compact?: boolean;
+}
+
+export function LanguageToggle({ compact = false }: LanguageToggleProps) {
   const { onChangeLang, currentLang } = useTranslate();
   const [isOpen, setIsOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
-  // Đóng dropdown khi click ra bên ngoài
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (
@@ -21,53 +28,71 @@ export function LanguageToggle() {
         setIsOpen(false);
       }
     };
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
+
+  const fallbackLang = allLangs[0];
+  const displayLang = mounted ? currentLang || fallbackLang : fallbackLang;
 
   return (
     <div className="relative inline-block text-left" ref={dropdownRef}>
-      {/* Nút bấm chính trên Header */}
       <motion.button
+        type="button"
         onClick={() => setIsOpen(!isOpen)}
-        initial={{ opacity: 0, scale: 0.8 }}
+        initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.3, delay: 0.6 }}
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-        className="relative flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-4 py-2 sm:py-2.5 rounded-lg sm:rounded-xl text-xs sm:text-sm font-medium transition-all duration-300 group overflow-hidden cursor-pointer text-gray-600 hover:text-rose-500 hover:bg-rose-50/80 border border-gray-200/60 bg-white/80 backdrop-blur-sm shadow-sm"
+        transition={{ duration: 0.25 }}
+        whileHover={{ scale: 1.04 }}
+        whileTap={{ scale: 0.96 }}
+        className={
+          compact
+            ? "relative flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium transition-all duration-200 cursor-pointer text-gray-700 hover:text-rose-600 hover:bg-white border border-rose-200/80 bg-white/80 backdrop-blur-md shadow-sm"
+            : "relative flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-4 py-2 sm:py-2.5 rounded-lg sm:rounded-xl text-xs sm:text-sm font-medium transition-all duration-300 group overflow-hidden cursor-pointer text-gray-600 hover:text-rose-500 hover:bg-rose-50/80 border border-gray-200/60 bg-white/80 backdrop-blur-sm shadow-sm"
+        }
         title="Chọn ngôn ngữ / Select Language"
       >
-        {/* Icon / Cờ hiện tại */}
-        <span className="text-sm sm:text-base relative z-10">
-          {currentLang?.icon}
+        <span
+          suppressHydrationWarning
+          className="text-sm sm:text-base leading-none"
+        >
+          {displayLang?.icon}
         </span>
 
-        {/* Nhãn ngôn ngữ hiện tại */}
-        <span className="hidden sm:inline-block whitespace-nowrap relative z-10 text-xs sm:text-sm font-medium uppercase">
-          {currentLang?.value}
+        <span
+          suppressHydrationWarning
+          className={
+            compact
+              ? "inline-block whitespace-nowrap text-xs font-semibold uppercase tracking-wide"
+              : "hidden sm:inline-block whitespace-nowrap text-xs sm:text-sm font-medium uppercase"
+          }
+        >
+          {displayLang?.value}
         </span>
 
-        {/* Mũi tên chỉ xuống */}
-        <span className={`text-[10px] transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}>
+        <span
+          className={`text-[9px] transition-transform duration-200 ${
+            isOpen ? "rotate-180" : ""
+          }`}
+        >
           ▼
         </span>
       </motion.button>
 
-      {/* Danh sách Dropdown xổ xuống */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ opacity: 0, y: -8, scale: 0.95 }}
+            initial={{ opacity: 0, y: -6, scale: 0.96 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: -8, scale: 0.95 }}
-            transition={{ duration: 0.2 }}
-            className="absolute right-0 mt-2 w-36 sm:w-40 rounded-xl bg-white shadow-xl border border-gray-100 py-2 z-50 overflow-hidden"
+            exit={{ opacity: 0, y: -6, scale: 0.96 }}
+            transition={{ duration: 0.18 }}
+            className="absolute right-0 mt-2 w-36 sm:w-40 rounded-xl bg-white/95 backdrop-blur-md shadow-xl border border-rose-100 py-1.5 z-50 overflow-hidden"
           >
             {allLangs.map((lang) => {
               const isSelected = lang.value === currentLang?.value;
               return (
                 <button
+                  type="button"
                   key={lang.value}
                   onClick={() => {
                     onChangeLang(lang.value);
@@ -75,8 +100,8 @@ export function LanguageToggle() {
                   }}
                   className={`w-full flex items-center justify-between px-3.5 py-2 text-xs sm:text-sm text-left transition-colors cursor-pointer ${
                     isSelected
-                      ? 'font-semibold text-rose-600 bg-rose-50/70'
-                      : 'text-gray-700 hover:bg-gray-50'
+                      ? "font-semibold text-rose-600 bg-rose-50/80"
+                      : "text-gray-700 hover:bg-rose-50/40"
                   }`}
                 >
                   <div className="flex items-center gap-2.5">

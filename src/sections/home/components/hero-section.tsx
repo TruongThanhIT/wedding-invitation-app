@@ -31,10 +31,8 @@ export const HeroSection = ({
           priority
           quality={90}
           sizes="100vw"
-          // Tinh chỉnh riêng cho mobile để căn trúng phần dâu rể
           className="object-cover object-[65%_center]"
         />
-        {/* Lớp phủ mờ giúp chữ đọc rõ hơn trên mobile */}
         <div className="absolute inset-0 bg-black/40 backdrop-blur-[1px]" />
       </div>
 
@@ -57,54 +55,54 @@ export const HeroSection = ({
       {/* ==========================================
           NỘI DUNG CHUNG CHO CẢ 2 GIAO DIỆN
          ========================================== */}
-      <div className="relative z-10 flex flex-col h-full px-4 sm:px-6 pt-10 sm:pt-18 md:pt-20 pb-4 justify-between">
-        <div className="flex-1 flex items-center justify-center">
+      <div className="relative z-10 flex flex-col h-full px-4 sm:px-6 pt-12 sm:pt-18 md:pt-20 pb-4 justify-between">
+        <div className="flex-1 flex items-center justify-center -mt-6 sm:-mt-10">
           <div className="max-w-4xl mx-auto text-center w-full">
             {/* Main Heading */}
             <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: isLoaded ? 1 : 0, y: isLoaded ? 0 : 50 }}
-              transition={{ duration: 1, delay: 0.2 }}
-              className="mb-4 sm:mb-8"
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: isLoaded ? 1 : 0, y: isLoaded ? 0 : 40 }}
+              transition={{ duration: 0.9, delay: 0.2 }}
+              className="mb-4 sm:mb-7"
             >
-              <div className="text-xs sm:text-base md:text-lg lg:text-xl text-white mb-2 sm:mb-4 font-medium drop-shadow-[0_1px_3px_rgba(0,0,0,0.8)] suppressHydrationWarning">
+              <div className="text-xs sm:text-base md:text-lg text-white/95 mb-1.5 sm:mb-3 font-medium tracking-wide drop-shadow-[0_1px_4px_rgba(0,0,0,0.85)] suppressHydrationWarning">
                 {t("hero.welcome")}
               </div>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-serif text-white mb-3 sm:mb-6 leading-tight drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]">
-                {t("hero.our")}
-                <span className="block sm:inline bg-gradient-to-r from-rose-300 via-pink-200 to-rose-300 bg-clip-text text-transparent font-bold">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif text-white mb-3 sm:mb-5 leading-tight drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)]">
+                {t("hero.our")}{" "}
+                <span className="block sm:inline text-rose-200 font-bold drop-shadow-[0_2px_6px_rgba(0,0,0,0.85)]">
                   {t("hero.wedding")}
                 </span>
               </h1>
-              <div className="w-24 sm:w-32 h-px bg-gradient-to-r from-transparent via-rose-300 to-transparent mx-auto"></div>
+              <div className="w-20 sm:w-28 h-px bg-gradient-to-r from-transparent via-rose-200 to-transparent mx-auto"></div>
             </motion.div>
 
             {/* Couple Photos */}
             <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
+              initial={{ opacity: 0, scale: 0.85 }}
               animate={{
                 opacity: isLoaded ? 1 : 0,
-                scale: isLoaded ? 1 : 0.8,
+                scale: isLoaded ? 1 : 0.85,
               }}
-              transition={{ duration: 1, delay: 0.6 }}
-              className="mb-6 sm:mb-8"
+              transition={{ duration: 0.9, delay: 0.5 }}
+              className="mb-5 sm:mb-8"
             >
-              <div className="flex flex-row items-center justify-center gap-3 sm:gap-6 md:gap-8 lg:gap-10 mb-4 sm:mb-6">
+              <div className="flex flex-row items-center justify-center gap-3 sm:gap-6 md:gap-8 lg:gap-10">
                 {/* Bride */}
                 <div className="text-center flex flex-col items-center flex-shrink-0">
-                  <div className="relative w-16 h-16 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 rounded-full overflow-hidden mb-2 sm:mb-4 shadow-lg border-2 sm:border-4 border-white ring-2 ring-rose-200 bg-rose-100 mx-auto">
+                  <div className="relative w-16 h-16 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full overflow-hidden mb-1.5 sm:mb-3 shadow-lg border-2 sm:border-3 border-white ring-2 ring-rose-200/80 bg-rose-100 mx-auto">
                     <Image
                       src={couple.bride.photo}
                       alt={couple.bride.name}
                       fill
-                      sizes="(max-width: 640px) 64px, (max-width: 768px) 96px, 128px"
+                      sizes="(max-width: 640px) 64px, (max-width: 768px) 96px, 112px"
                       className="object-cover object-top"
                       priority
                     />
                   </div>
-                  <div className="w-24 sm:w-32 md:w-40 lg:w-48 xl:w-56 mx-auto px-1 sm:px-2">
+                  <div className="w-24 sm:w-32 md:w-40 lg:w-48 mx-auto px-1">
                     <h3
-                      className="text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl font-serif text-white break-words hyphens-auto leading-tight overflow-wrap-anywhere font-bold drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]"
+                      className="text-xs sm:text-base md:text-lg lg:text-xl font-serif text-white break-words leading-tight font-bold drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]"
                       title={couple.bride.fullName}
                     >
                       {couple.bride.name}
@@ -113,11 +111,11 @@ export const HeroSection = ({
                 </div>
 
                 {/* Heart Icon */}
-                <div className="text-rose-400 animate-pulse flex-shrink-0 flex items-center justify-center -mt-3 sm:mt-0 drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)]">
+                <div className="text-rose-400 animate-pulse flex-shrink-0 flex items-center justify-center -mt-4 sm:-mt-5 drop-shadow-[0_1px_3px_rgba(0,0,0,0.85)]">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
-                    className="w-5 h-5 sm:w-7 sm:h-7 md:w-9 md:h-9 lg:w-11 lg:h-11 text-rose-400 fill-rose-500/20 stroke-rose-400 stroke-[1.5]"
+                    className="w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 text-rose-400 fill-rose-500/30 stroke-rose-300 stroke-[1.5]"
                   >
                     <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
                   </svg>
@@ -125,19 +123,19 @@ export const HeroSection = ({
 
                 {/* Groom */}
                 <div className="text-center flex flex-col items-center flex-shrink-0">
-                  <div className="relative w-16 h-16 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 rounded-full overflow-hidden mb-2 sm:mb-4 shadow-lg border-2 sm:border-4 border-white ring-2 ring-blue-200 bg-blue-100 mx-auto">
+                  <div className="relative w-16 h-16 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full overflow-hidden mb-1.5 sm:mb-3 shadow-lg border-2 sm:border-3 border-white ring-2 ring-blue-200/80 bg-blue-100 mx-auto">
                     <Image
                       src={couple.groom.photo}
                       alt={couple.groom.name}
                       fill
-                      sizes="(max-width: 640px) 64px, (max-width: 768px) 96px, 128px"
+                      sizes="(max-width: 640px) 64px, (max-width: 768px) 96px, 112px"
                       className="object-cover object-top"
                       priority
                     />
                   </div>
-                  <div className="w-24 sm:w-32 md:w-40 lg:w-48 xl:w-56 mx-auto px-1 sm:px-2">
+                  <div className="w-24 sm:w-32 md:w-40 lg:w-48 mx-auto px-1">
                     <h3
-                      className="text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl font-serif text-white break-words hyphens-auto leading-tight overflow-wrap-anywhere font-bold drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]"
+                      className="text-xs sm:text-base md:text-lg lg:text-xl font-serif text-white break-words leading-tight font-bold drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]"
                       title={couple.groom.fullName}
                     >
                       {couple.groom.name}
@@ -149,24 +147,24 @@ export const HeroSection = ({
 
             {/* CTA Buttons */}
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: isLoaded ? 1 : 0, y: isLoaded ? 0 : 30 }}
-              transition={{ duration: 1, delay: 1.2 }}
-              className="flex flex-col sm:flex-row gap-2.5 sm:gap-4 justify-center max-w-xs sm:max-w-none mx-auto"
+              initial={{ opacity: 0, y: 24 }}
+              animate={{ opacity: isLoaded ? 1 : 0, y: isLoaded ? 0 : 24 }}
+              transition={{ duration: 0.9, delay: 0.9 }}
+              className="flex flex-col sm:flex-row gap-2 sm:gap-4 justify-center max-w-[230px] sm:max-w-none mx-auto"
             >
               <motion.button
                 onClick={() => onScrollToSection("rsvp")}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="bg-gradient-to-r from-rose-500 to-pink-600 text-white px-6 sm:px-8 py-2.5 sm:py-4 rounded-full font-semibold text-xs sm:text-base md:text-lg shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
+                whileHover={{ scale: 1.04 }}
+                whileTap={{ scale: 0.96 }}
+                className="bg-gradient-to-r from-rose-500 to-pink-600 text-white px-5 sm:px-7 py-2.5 sm:py-3.5 rounded-full font-semibold text-xs sm:text-base shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
               >
                 {t("navigation.rsvp")}
               </motion.button>
               <motion.button
                 onClick={() => onScrollToSection("details")}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="bg-white/90 backdrop-blur-md text-gray-900 px-6 sm:px-8 py-2.5 sm:py-4 rounded-full font-semibold text-xs sm:text-base md:text-lg shadow-lg hover:shadow-xl transition-all duration-300 border border-white cursor-pointer"
+                whileHover={{ scale: 1.04 }}
+                whileTap={{ scale: 0.96 }}
+                className="bg-white/90 backdrop-blur-md text-gray-900 px-5 sm:px-7 py-2.5 sm:py-3.5 rounded-full font-semibold text-xs sm:text-base shadow-lg hover:shadow-xl transition-all duration-300 border border-white cursor-pointer"
               >
                 {t("hero.view-details")}
               </motion.button>
@@ -175,23 +173,23 @@ export const HeroSection = ({
         </div>
 
         {/* Scroll Indicator */}
-        <div className="flex justify-center pb-4 sm:pb-8">
+        <div className="flex justify-center pb-3 sm:pb-6">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: isLoaded ? 1 : 0 }}
-            transition={{ duration: 1, delay: 1.5 }}
+            transition={{ duration: 0.9, delay: 1.2 }}
             className="z-20"
           >
             <motion.div
-              animate={{ y: [0, 10, 0] }}
+              animate={{ y: [0, 8, 0] }}
               transition={{ duration: 2, repeat: Infinity }}
-              className="text-white text-center cursor-pointer drop-shadow-[0_1px_2px_rgba(0,0,0,0.9)]"
+              className="text-white text-center cursor-pointer drop-shadow-[0_1px_3px_rgba(0,0,0,0.9)]"
               onClick={() => onScrollToSection("couple")}
             >
-              <div className="text-[10px] sm:text-xs mb-1 sm:mb-2 font-semibold">
+              <div className="text-[10px] sm:text-xs mb-1 font-semibold">
                 {t("hero.scroll-down")}
               </div>
-              <div className="text-base sm:text-xl">⬇️</div>
+              <div className="text-sm sm:text-lg">⬇️</div>
             </motion.div>
           </motion.div>
         </div>
