@@ -24,7 +24,7 @@ export const WeddingEventSection = ({ date, venue }: WeddingEventSectionProps) =
   const calendarEvent = {
     title: t("details.our-wedding-day"),
     start: date,
-    end: new Date(date.getTime() + 5 * 60 * 60 * 1000),
+    end: new Date(date.getTime() + 3 * 60 * 60 * 1000),
     description: t("details.join-us"),
     location: venue.ceremony.address,
   };
